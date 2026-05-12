@@ -1,0 +1,3688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир Твоих Тестов ✨</title>
+    <style>
+        /* Общие настройки */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffeadb 0%, #dcf0ff 100%);
+            background-attachment: fixed; /* Фон не двигается */
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+        }
+
+        /* Блок 1: Приветствие */
+        .header-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Занимает весь экран при входе */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #5a5a5a;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            max-width: 650px;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 30px;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Блок 2: Контейнер с тестами */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px 100px 20px;
+        }
+
+        .category-title {
+            font-size: 2.2rem;
+            margin: 60px 0 30px 0;
+            display: block;
+            border-left: 5px solid #ffffff;
+            padding-left: 15px;
+        }
+
+        .tests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .test-card {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1.1rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .test-card:hover {
+            transform: translateY(-10px);
+            background: rgba(220, 240, 255, 0.9);
+            border-color: #ffffff;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Убираем лишние кнопки-подсказки, чтобы не мешали */
+        .scroll-down {
+            margin-top: 30px;
+            font-style: italic;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Блок 1 -->
+        <!-- Обновленный Блок 1 с ТВОИМ текстом -->
+    <div class="header-block">
+        <div class="glass-header">
+            <h1>Мир Твоих Тестов ✨</h1>
+            <div class="divider"></div>
+            <div class="intro-text">
+                Привет! Здесь ты можешь узнать много всего о себе, пройти тесты на разные темы — от аниме до загадок подсознания. Листай ниже, выбирай то, что тебе по душе, и собирай свою уникальную коллекцию трофеев!
+            </div>
+        </div>
+        <div class="scroll-down">Листай вниз, чтобы увидеть тесты ↓</div>
+    </div>
+
+    <style>
+        /* Оформление блока */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            max-width: 750px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0;
+            color: #5a5a5a;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #ffccaa, #dcf0ff);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #5a5a5a;
+        }
+
+        .scroll-down {
+            margin-top: 30px;
+            font-style: italic;
+            opacity: 0.6;
+            color: #5a5a5a;
+        }
+    </style>
+
+    <!-- Блок 2 -->
+    <div class="container">
+        
+        <div class="category-title">🎬 Мир Экрана</div>
+        <div class="tests-grid">
+            <div class="test-card">Твоё идеальное аниме</div>
+            <div class="test-card">Фильм под настроение</div>
+        </div>
+
+        <div class="category-title">🧠 Тайны Мозга</div>
+        <div class="tests-grid">
+            <div class="test-card">Правша или Левша?</div>
+            <div class="test-card">Сканер возраста</div>
+            <div class="test-card">Ангел или Демон?</div>
+            <div class="test-card">Тест ассоциаций (Картинки)</div>
+            <div class="test-card">Насколько ты лидер?</div>
+            <div class="test-card">Всё ли хорошо с психикой?</div>
+        </div>
+
+        <div class="category-title">🎒 Школьный вайб</div>
+        <div class="tests-grid">
+            <div class="test-card">Умнее ли ты пятиклассника?</div>
+            <div class="test-card">Профессия будущего</div>
+            <div class="test-card">Идеальный учебный режим</div>
+            <div class="test-card">Что ты за школьный предмет?</div>
+            <div class="test-card">Цифровая гигиена</div>
+        </div>
+
+        <div class="category-title">✨ Личное и Эстетика</div>
+        <div class="tests-grid">
+            <div class="test-card">Пессимист, Реалист или Оптимист</div>
+            <div class="test-card">Кто ты в компании друзей?</div>
+            <div class="test-card">Эпоха для жизни</div>
+            <div class="test-card">Твой тотемный цветок</div>
+            <div class="test-card">Твое тотемное животное</div>
+            <div class="test-card">Твое тайное хобби</div>
+        </div>
+
+        <div class="category-title">🎭 Особенное</div>
+        <div class="tests-grid">
+            <div class="test-card" style="background: rgba(255, 204, 170, 0.4);">Интерактивная сценка: Город</div>
+        </div>
+
+    </div>
+<!-- 1. Сначала добавим ID к карточке в Блоке 2, чтобы она работала как ссылка -->
+<!-- Найди в своем коде карточку "Твоё идеальное аниме" и замени её на эту строку: -->
+<!-- <div class="test-card" onclick="document.getElementById('anime-test-anchor').scrollIntoView({behavior: 'smooth'})">Твоё идеальное аниме</div> -->
+
+<style>
+    /* Дизайн самого теста, который лежит в ленте */
+    .test-section {
+        max-width: 850px;
+        margin: 100px auto; /* Большой отступ, чтобы тесты не слипались */
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
+    .progress-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .progress-text {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #666;
+    }
+
+    .line-bg {
+        width: 100%;
+        height: 6px;
+        background: rgba(255,255,255,0.5);
+        border-radius: 10px;
+    }
+
+    .line-fill {
+        width: 14%; /* Начинаем с 1/7 */
+        height: 100%;
+        background: linear-gradient(90deg, #ffccaa, #dcf0ff);
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .question-box {
+        min-height: 300px;
+    }
+
+    .answer-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .ans-btn {
+        padding: 20px;
+        background: rgba(255,255,255,0.5);
+        border: 1px solid #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: 0.3s;
+    }
+
+    .ans-btn:hover {
+        background: #fff;
+        transform: scale(1.03);
+    }
+
+    /* Стиль для трофея */
+    #trophy-display {
+        display: none;
+        padding: 40px;
+        animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; } to { opacity: 1; }
+    }
+</style>
+
+<!-- Тест про Аниме в ленте -->
+<div id="anime-test-anchor" style="padding-top: 20px;"></div> <!-- Якорь для прыжка -->
+<div class="test-section" id="anime-test-ui">
+    <div class="category-tag" style="opacity: 0.5; margin-bottom: 10px;">Тест из раздела: Мир Экрана</div>
+    <h2>🎬 Твоё идеальное аниме</h2>
+    
+    <div id="quiz-content">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="q-num">1</span> из 7</div>
+            <div class="line-bg"><div class="line-fill" id="q-line"></div></div>
+        </div>
+
+        <div class="question-box">
+            <h3 id="q-text">Тебе предложили заглянуть в будущее на 5 минут. Твоя реакция?</h3>
+            <div class="answer-options" id="q-answers">
+                <!-- Кнопки вставит скрипт -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок результата (скрыт в начале) -->
+    <div id="trophy-display">
+        <div style="font-size: 100px; margin-bottom: 20px;" id="final-trophy">✨</div>
+        <h2 id="final-title">Результат</h2>
+        <p id="final-desc" style="line-height: 1.6; color: #555;"></p>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 20px;">Пройти ещё раз</button>
+    </div>
+</div>
+
+<script>
+    // 1. Делаем карточку в списке рабочей
+    // Найди в HTML свою карточку и убедись, что у неё есть этот onclick
+    document.querySelectorAll('.test-card').forEach(card => {
+        if(card.innerText === "Твоё идеальное аниме") {
+            card.onclick = () => document.getElementById('anime-test-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    // 2. Данные теста
+    const animeData = {
+        questions: [
+            {
+                q: "Тебе предложили заглянуть в будущее на 5 минут. Твоя реакция?",
+                a: [
+                    {t: "Попробую узнать какую-нибудь тайну.", s: "jjk"},
+                    {t: "Откажусь. Пусть всё идет своим чередом.", s: "slayer"},
+                    {t: "Соглашусь, чтобы проверить цели.", s: "deathnote"},
+                    {t: "Посмотрю, счастливы ли мои близкие.", s: "yourname"}
+                ]
+            },
+            {
+                q: "Ты идешь по коридору и видишь 4 двери. В какую войдешь?",
+                a: [
+                    {t: "Тяжелая железная дверь, от которой исходит холод.", s: "deathnote"},
+                    {t: "Деревянная дверь с запахом травы.", s: "volleyball"},
+                    {t: "Стеклянная дверь, за которой виден закат.", s: "yourname"},
+                    {t: "Белая дверь, за которой слышен шум толпы.", s: "jjk"}
+                ]
+            },
+            {
+                q: "В чем твоя главная «суперсила» в обычной жизни?",
+                a: [
+                    {t: "Я замечаю детали, которые другие пропускают.", s: "deathnote"},
+                    {t: "Я умею поднять настроение любому.", s: "volleyball"},
+                    {t: "Если я что-то решила — я это сделаю.", s: "slayer"},
+                    {t: "Я могу договориться с кем угодно.", s: "jjk"}
+                ]
+            },
+            {
+                q: "Какое чувство тебе сложнее всего контролировать?",
+                a: [
+                    {t: "Азарт. Когда я вовлекаюсь, меня не остановить.", s: "volleyball"},
+                    {t: "Справедливый гнев, если кого-то обижают.", s: "slayer"},
+                    {t: "Светлую грусть по прошлому.", s: "yourname"},
+                    {t: "Любопытство. Мне нужно знать всё.", s: "jjk"}
+                ]
+            },
+            {
+                q: "Какой звук тебе сейчас ближе?",
+                a: [
+                    {t: "Гул переполненного стадиона.", s: "volleyball"},
+                    {t: "Стук капель дождя по крыше.", s: "deathnote"},
+                    {t: "Звук шагов по хрустящему снегу.", s: "slayer"},
+                    {t: "Тихий шелест страниц старой книги.", s: "yourname"}
+                ]
+            },
+            {
+                q: "Если бы ты могла изменить одну вещь в мире...",
+                a: [
+                    {t: "Справедливость для каждого обиженного.", s: "jjk"},
+                    {t: "Возможность исправить свои ошибки.", s: "yourname"},
+                    {t: "Способность понимать людей без слов.", s: "slayer"},
+                    {t: "Реализация самой смелой мечты.", s: "volleyball"}
+                ]
+            },
+            {
+                q: "На что ты потратишь последние силы в конце дня?",
+                a: [
+                    {t: "На тренировку или активное движение.", s: "volleyball"},
+                    {t: "На серьезный разговор, который пора начать.", s: "deathnote"},
+                    {t: "На творчество или мечты.", s: "yourname"},
+                    {t: "На помощь другу.", s: "slayer"}
+                ]
+            }
+        ],
+        results: {
+            jjk: { t: "Магическая битва", icon: "🗡️", d: "Твоя душа жаждет справедливости и силы. Ты ценишь верность друзей и готова сражаться до конца." },
+            slayer: { t: "Клинок, рассекающий демонов", icon: "⚔️", d: "Ты невероятно волевой человек с добрым сердцем. Твоя сила — в твоих принципах и любви к семье." },
+            yourname: { t: "Твоё имя", icon: "☄️", d: "Ты очень тонко чувствуешь этот мир. Красота момента и связь между людьми для тебя важнее всего." },
+            deathnote: { t: "Тетрадь смерти", icon: "📓", d: "Твой ум — твоё главное оружие. Ты видишь то, что скрыто от других, и всегда на три шага впереди." },
+            volleyball: { t: "Волейбол", icon: "🏐", d: "Энергия в тебе бьет ключом! Ты командный игрок, который не боится трудностей и всегда идет к победе." }
+        }
+    };
+
+    let currentQ = 0;
+    let scores = { jjk: 0, slayer: 0, yourname: 0, deathnote: 0, volleyball: 0 };
+
+    function renderQuestion() {
+        const qData = animeData.questions[currentQ];
+        document.getElementById('q-num').innerText = currentQ + 1;
+        document.getElementById('q-line').style.width = ((currentQ + 1) / 7 * 100) + "%";
+        document.getElementById('q-text').innerText = qData.q;
+        
+        const ansContainer = document.getElementById('q-answers');
+        ansContainer.innerHTML = '';
+        
+        // Перемешиваем ответы для честности
+        const shuffledOptions = [...qData.a].sort(() => Math.random() - 0.5);
+
+        shuffledOptions.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleAnswer(opt.s);
+            ansContainer.appendChild(btn);
+        });
+    }
+
+    function handleAnswer(key) {
+        scores[key]++;
+        if (currentQ < 6) {
+            currentQ++;
+            renderQuestion();
+        } else {
+            showResult();
+        }
+    }
+
+    function showResult() {
+        // Ищем, где больше всего баллов
+        const winner = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+        const res = animeData.results[winner];
+        
+        document.getElementById('quiz-content').style.display = 'none';
+        const display = document.getElementById('trophy-display');
+        display.style.display = 'block';
+        
+        document.getElementById('final-trophy').innerText = res.icon;
+        document.getElementById('final-title').innerText = res.t;
+        document.getElementById('final-desc').innerText = res.d;
+        
+        // Здесь мы потом добавим эффект тумана и улета трофея в коллекцию
+    }
+
+    // Запускаем тест при загрузке страницы
+    renderQuestion();
+</script>
+
+<style>
+    /* Анимация искр между блоками */
+    .divider-sparks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 0;
+        opacity: 0.6;
+    }
+    
+    .spark-line {
+        height: 1px;
+        width: 100px;
+        background: linear-gradient(90deg, transparent, #ffccaa, transparent);
+    }
+    
+    .spark-star {
+        margin: 0 15px;
+        font-size: 15px;
+        animation: spark-glow 1.5s infinite alternate;
+    }
+    
+    @keyframes spark-glow {
+        from { opacity: 0.3; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1.2); text-shadow: 0 0 10px #fff; }
+    }
+
+    /* Анимация перетекания */
+    .fade-anim { transition: opacity 0.5s ease, transform 0.5s ease; }
+    .hidden-step { opacity: 0; transform: translateY(10px); pointer-events: none; }
+</style>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<!-- Якорь для прыжка -->
+<div id="movie-test-anchor" style="padding-top: 50px;"></div>
+
+<!-- Блок теста Фильмы -->
+<div class="test-section movie-test" id="movie-test-ui">
+    <div class="category-tag" style="opacity: 0.5; margin-bottom: 10px;">Тест из раздела: Мир Экрана</div>
+    <h2>🍿 Фильм под настроение</h2>
+    
+    <div id="movie-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="m-num">1</span> из 5</div>
+            <div class="line-bg"><div class="line-fill" id="m-line"></div></div>
+        </div>
+
+        <div class="question-box">
+            <h3 id="m-text">Загрузка...</h3>
+            <div class="answer-options" id="m-answers">
+                <!-- Сюда влетят перемешанные кнопки -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Результат -->
+    <div id="movie-trophy-display" style="display: none;" class="fade-anim">
+        <div style="font-size: 100px; margin-bottom: 20px;" id="m-final-trophy">✨</div>
+        <h2 id="m-final-title">Твой результат</h2>
+        <p id="m-final-desc" style="line-height: 1.6; color: #555;"></p>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 20px;">Пройти заново</button>
+    </div>
+</div>
+
+<script>
+    // 1. ПРИВЯЗКА КНОПКИ (исправлено)
+    function setupMovieLink() {
+        const cards = document.querySelectorAll('.test-card');
+        cards.forEach(card => {
+            if (card.innerText.includes("Фильм под настроение")) {
+                card.onclick = () => {
+                    document.getElementById('movie-test-anchor').scrollIntoView({behavior: 'smooth'});
+                };
+            }
+        });
+    }
+    // Запускаем поиск кнопки сразу
+    setupMovieLink();
+
+    // 2. ДАННЫЕ ТЕСТА (4 фильма, как просила)
+    const movieData = {
+        questions: [
+            {
+                q: "Если бы ты могла выбрать вид из окна прямо сейчас, что бы там было?",
+                a: [
+                    {t: "Заснеженные улицы города.", s: "homealone"},
+                    {t: "Старинный замок в тумане.", s: "wednesday"},
+                    {t: "Мегаполис в неоновом свете.", s: "spiderman"},
+                    {t: "Тихая улочка Англии.", s: "potter"}
+                ]
+            },
+            {
+                q: "Какой аромат создает для тебя идеальную атмосферу?",
+                a: [
+                    {t: "Запах мандаринов и хвои.", s: "homealone"},
+                    {t: "Старые книги и сургуч.", s: "potter"},
+                    {t: "Аромат дождя и асфальта.", s: "wednesday"},
+                    {t: "Попкорн и газировка.", s: "spiderman"}
+                ]
+            },
+            {
+                q: "Что ты сделаешь со старой пыльной коробкой на чердаке?",
+                a: [
+                    {t: "Сразу открою — ищу сокровища!", s: "spiderman"},
+                    {t: "Изучу её снаружи на предмет ловушек.", s: "wednesday"},
+                    {t: "Позову друзей разделить момент.", s: "homealone"},
+                    {t: "Оставлю до вечера для таинственности.", s: "potter"}
+                ]
+            },
+            {
+                q: "Твой способ провести вечер в одиночестве?",
+                a: [
+                    {t: "Укутаться в плед и мечтать.", s: "potter"},
+                    {t: "Разгадывать сложный шифр.", s: "wednesday"},
+                    {t: "Танцевать под громкую музыку.", s: "spiderman"},
+                    {t: "Смотреть старые фотографии.", s: "homealone"}
+                ]
+            },
+            {
+                q: "Какого цвета твое «сегодняшнее» настроение?",
+                a: [
+                    {t: "Глубокий фиолетовый.", s: "wednesday"},
+                    {t: "Теплый золотистый.", s: "potter"},
+                    {t: "Электрический синий.", s: "spiderman"},
+                    {t: "Ярко-оранжевый.", s: "homealone"}
+                ]
+            }
+        ],
+        results: {
+            potter: { t: "Гарри Поттер", icon: "🪄", d: "Тебе не хватает магии в буднях. Время окунуться в уют Хогвартса!" },
+            homealone: { t: "Один дома", icon: "🔑", d: "Хочется тепла, смеха и капельки праздничного хаоса." },
+            wednesday: { t: "Уэнсдей", icon: "🎻", d: "Твое настроение — загадочное и немного дерзкое. Время расследований!" },
+            spiderman: { t: "Человек-паук", icon: "🎭", d: "Драйв, энергия и вера в то, что ты всё сможешь! Вперед!" }
+        }
+    };
+
+    let m_currentQ = 0;
+    let m_scores = { potter: 0, homealone: 0, wednesday: 0, spiderman: 0 };
+
+    function renderMovieQuestion() {
+        const quizContent = document.getElementById('movie-quiz-content');
+        quizContent.classList.add('hidden-step'); // Плавное исчезновение
+
+        setTimeout(() => {
+            const qData = movieData.questions[m_currentQ];
+            document.getElementById('m-num').innerText = m_currentQ + 1;
+            document.getElementById('m-line').style.width = ((m_currentQ + 1) / 5 * 100) + "%";
+            document.getElementById('m-text').innerText = qData.q;
+            
+            const ansContainer = document.getElementById('m-answers');
+            ansContainer.innerHTML = '';
+            
+            // ПЕРЕМЕШИВАНИЕ ОТВЕТОВ
+            const shuffled = [...qData.a].sort(() => Math.random() - 0.5);
+
+            shuffled.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => handleMovieAnswer(opt.s);
+                ansContainer.appendChild(btn);
+            });
+            
+            quizContent.classList.remove('hidden-step'); // Плавное появление
+        }, 500);
+    }
+
+    function handleMovieAnswer(key) {
+        m_scores[key]++;
+        if (m_currentQ < 4) {
+            m_currentQ++;
+            renderMovieQuestion();
+        } else {
+            showMovieResult();
+        }
+    }
+
+    function showMovieResult() {
+        const winner = Object.keys(m_scores).reduce((a, b) => m_scores[a] > m_scores[b] ? a : b);
+        const res = movieData.results[winner];
+        
+        const quizContent = document.getElementById('movie-quiz-content');
+        quizContent.classList.add('hidden-step');
+
+        setTimeout(() => {
+            quizContent.style.display = 'none';
+            const display = document.getElementById('movie-trophy-display');
+            display.style.display = 'block';
+            document.getElementById('m-final-trophy').innerText = res.icon;
+            document.getElementById('m-final-title').innerText = res.t;
+            document.getElementById('m-final-desc').innerText = res.d;
+            display.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    renderMovieQuestion();
+</script>
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+<style>
+    /* Огромный неоновый трофей */
+    .neon-hand {
+        font-size: 150px; /* Сделал очень большим */
+        color: #fff;
+        text-shadow: 0 0 20px #ffccaa, 0 0 40px #dcf0ff;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+
+    /* Понятная игровая зона */
+    .game-split {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        min-height: 250px;
+        margin-top: 20px;
+    }
+
+    .side-box {
+        flex: 1;
+        cursor: pointer;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 0 10px;
+        border: 2px solid transparent;
+    }
+
+    .side-box:hover {
+        background: rgba(255, 255, 255, 0.6);
+        border-color: #fff;
+        transform: scale(1.05);
+    }
+
+    /* Стена по центру */
+    .center-wall {
+        width: 15px;
+        height: 150px;
+        background: #5a5a5a;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .icon-big { font-size: 80px; display: block; margin-bottom: 10px; }
+</style>
+
+<div id="lefty-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="lefty-test-ui" style="background: rgba(255, 234, 219, 0.5) !important;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">🧠 Правша или Левша?</h2>
+    
+    <div id="lefty-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Задание <span id="l-num">1</span> из 5</div>
+            <div class="line-bg"><div id="l-line" class="line-fill"></div></div>
+        </div>
+
+        <h3 id="l-text" style="min-height: 60px;">Загрузка...</h3>
+        
+        <div id="l-game-zone" class="game-split">
+            <!-- Сюда влетает разделение на Лево и Право -->
+        </div>
+    </div>
+
+    <div id="lefty-trophy-display" style="display: none;" class="fade-anim">
+        <div class="neon-hand">✋</div>
+        <h2 id="l-final-title">Твой результат</h2>
+        <p id="l-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: #444;"></p>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 30px;">Пройти ещё раз </button>
+    </div>
+</div>
+
+<script>
+    // Настройка кнопки перехода
+    function fixLeftyButton() {
+        const cards = document.querySelectorAll('.test-card');
+        cards.forEach(card => {
+            if (card.innerText.includes("Правша или Левша")) {
+                card.onclick = () => document.getElementById('lefty-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    fixLeftyButton();
+
+    let l_step = 0;
+    let l_R = 0;
+    let l_L = 0;
+
+    const l_tasks = [
+        {
+            t: "В каком сундуке спрятан клад?",
+            left: { h: '<span class="icon-big">📦</span>Левый', s: 'L' },
+            right: { h: '<span class="icon-big">📦</span>Правый', s: 'R' }
+        },
+        {
+            t: "С какой стороны тебе удобнее взять чашку за ручку?",
+            left: { h: '<div style="transform: scaleX(-1);"><span class="icon-big">☕</span></div>Слева', s: 'L' },
+            right: { h: '<span class="icon-big">☕</span>Справа', s: 'R' }
+        },
+        {
+            t: "Впереди стена. С какой стороны ты её обойдешь?",
+            isWall: true,
+            left: { h: '<span class="icon-big">↖️</span>Слева', s: 'L' },
+            right: { h: '<span class="icon-big">↗️</span>Справа', s: 'R' }
+        },
+        {
+            t: "Выбери кристалл, который тебе больше нравится!",
+            left: { h: '<span class="icon-big">💎</span>Голубой', s: 'L' },
+            right: { h: '<span class="icon-big">🔶</span>Оранжевый', s: 'R' }
+        },
+        {
+            t: "Нажми на любую сторону наугад!",
+            left: { h: '<span class="icon-big">✨</span>Сюда', s: 'L' },
+            right: { h: '<span class="icon-big">✨</span>Туда', s: 'R' }
+        }
+    ];
+
+    function l_click(side) {
+        if(side === 'R') l_R++; else l_L++;
+        if (l_step < 4) { l_step++; renderL(); } else { finishL(); }
+    }
+
+    function renderL() {
+        const quiz = document.getElementById('lefty-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = l_tasks[l_step];
+            document.getElementById('l-num').innerText = l_step + 1;
+            document.getElementById('l-line').style.width = ((l_step + 1) / 5 * 100) + "%";
+            document.getElementById('l-text').innerText = task.t;
+
+            let html = `<div class="side-box" onclick="l_click('${task.left.s}')">${task.left.h}</div>`;
+            if(task.isWall) html += `<div class="center-wall"></div>`;
+            html += `<div class="side-box" onclick="l_click('${task.right.s}')">${task.right.h}</div>`;
+            
+            document.getElementById('l-game-zone').innerHTML = html;
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishL() {
+        document.getElementById('lefty-quiz-content').style.display = 'none';
+        const res = document.getElementById('lefty-trophy-display');
+        res.style.display = 'block';
+        
+        let t, d;
+        if (l_R > l_L) { t = "Ты — уверенный Правша!"; d = "Твои реакции ведут вправо. Твой мозг любит логику и порядок!"; }
+        else if (l_L > l_R) { t = "Ты — скрытый Левша!"; d = "Твое подсознание выбирает левую сторону. Это знак творческой натуры!"; }
+        else { t = "Ты — Амбидекстр!"; d = "Ты идеально сбалансирована! Твой мозг одинаково хорошо владеет обеими сторонами."; }
+        
+        document.getElementById('l-final-title').innerText = t;
+        document.getElementById('l-final-desc').innerText = d;
+    }
+    renderL();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="age-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="age-test-ui" style="background: rgba(220, 240, 255, 0.4) !important;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">🕰️ Сканер возраста</h2>
+    
+    <div id="age-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="a-num">1</span> из 7</div>
+            <div class="line-bg"><div id="a-line" class="line-fill"></div></div>
+        </div>
+
+        <h3 id="a-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка...</h3>
+        
+        <div id="a-answers-zone" class="answer-options">
+            <!-- 4 варианта ответа в столбик или сетку -->
+        </div>
+    </div>
+
+    <div id="age-trophy-display" style="display: none;" class="fade-anim">
+        <div class="trophy-anim" style="font-size: 100px; color: #ffccaa; margin-bottom: 20px;">⏳</div>
+        <h2 id="a-final-title">Твой результат</h2>
+        <p id="a-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Пройти ещё раз </button>
+    </div>
+</div>
+
+<script>
+    function setupAgeLink() {
+        const cards = document.querySelectorAll('.test-card');
+        cards.forEach(card => {
+            if (card.innerText.includes("Сканер возраста")) {
+                card.onclick = () => document.getElementById('age-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupAgeLink();
+
+    let a_step = 0;
+    let a_totalScore = 0;
+
+    const a_tasks = [
+        {
+            q: "Что ты сделаешь, если увидишь на улице глубокую и чистую лужу?",
+            options: [
+                {t: "Обязательно попробую измерить глубину сапогом!", p: 1},
+                {t: "Обойду аккуратно, чтобы не испачкать кроссовки.", p: 4},
+                {t: "Попробую перепрыгнуть, это же весело!", p: 2},
+                {t: "Просто пройду мимо, не обратив внимания.", p: 5}
+            ]
+        },
+        {
+            q: "Твой идеальный подарок на праздник?",
+            options: [
+                {t: "Огромный набор конструктора или кукла.", p: 1},
+                {t: "Крутой гаджет или аксессуар.", p: 3},
+                {t: "Конверт с деньгами — сама решу, что купить.", p: 5},
+                {t: "Что-то полезное для хобби или творчества.", p: 4}
+            ]
+        },
+        {
+            q: "Какое время суток тебе нравится больше всего?",
+            options: [
+                {t: "Утро! Столько всего интересного впереди.", p: 1},
+                {t: "Ночь. Обожаю сидеть в тишине в телефоне.", p: 4},
+                {t: "Вечер, когда можно гулять с друзьями.", p: 3},
+                {t: "Обед, когда можно вкусно поесть и отдохнуть.", p: 5}
+            ]
+        },
+        {
+            q: "Если тебе станет скучно, чем ты займешься?",
+            options: [
+                {t: "Придумаю какую-нибудь игру из ничего.", p: 1},
+                {t: "Буду листать ленту соцсетей.", p: 4},
+                {t: "Позвоню подруге поболтать.", p: 3},
+                {t: "Просто лягу поспать или помечтать.", p: 5}
+            ]
+        },
+        {
+            q: "Как ты относишься к каше на завтрак?",
+            options: [
+                {t: "Фу, только если заставят!", p: 1},
+                {t: "Люблю, особенно если там много фруктов.", p: 3},
+                {t: "Полезно, стараюсь есть для здоровья.", p: 5},
+                {t: "Лучше съем хлопья или бутерброд.", p: 2}
+            ]
+        },
+        {
+            q: "Твой любимый способ передвижения?",
+            options: [
+                {t: "Бегом! Куда угодно и побыстрее.", p: 1},
+                {t: "На самокате или велике.", p: 2},
+                {t: "Спокойным шагом в наушниках.", p: 4},
+                {t: "На машине или автобусе, чтобы не устать.", p: 5}
+            ]
+        },
+        {
+            q: "Что для тебя «взрослая жизнь»?",
+            options: [
+                {t: "Когда можно делать всё, что хочешь!", p: 1},
+                {t: "Куча проблем и никакой радости.", p: 5},
+                {t: "Свобода и возможность путешествовать.", p: 3},
+                {t: "Работа и ответственность.", p: 4}
+            ]
+        }
+    ];
+
+    function a_ans(p) {
+        a_totalScore += p;
+        if (a_step < 6) { a_step++; renderAge(); } else { finishAge(); }
+    }
+
+    function renderAge() {
+        const quiz = document.getElementById('age-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = a_tasks[a_step];
+            document.getElementById('a-num').innerText = a_step + 1;
+            document.getElementById('a-line').style.width = ((a_step + 1) / 7 * 100) + "%";
+            document.getElementById('a-text').innerText = task.q;
+
+            const zone = document.getElementById('a-answers-zone');
+            zone.innerHTML = '';
+            
+            // Перемешиваем ответы
+            const shuffled = [...task.options].sort(() => Math.random() - 0.5);
+            shuffled.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => a_ans(opt.p);
+                zone.appendChild(btn);
+            });
+            
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishAge() {
+        document.getElementById('age-quiz-content').style.display = 'none';
+        const res = document.getElementById('age-trophy-display');
+        res.style.display = 'block';
+        
+        let t, d;
+        const s = a_totalScore;
+
+        if (s <= 10) { t = "Тебе меньше 7 лет!"; d = "В твоей душе живет настоящий исследователь! В этом возрасте ты чувствуешь себя легко, мир кажется огромным и добрым. Наслаждайся этим чудесным детством!"; }
+        else if (s <= 16) { t = "Тебе от 8 до 12 лет!"; d = "Ты уже много знаешь, но всё еще умеешь искренне радоваться мелочам. Самое время для игр, верных друзей и первых открытий!"; }
+        else if (s <= 22) { t = "Тебе от 13 до 16 лет!"; d = "Время перемен и поиска себя. Ты чувствуешь мир острее других. Это крутой период, чтобы найти свое призвание!"; }
+        else if (s <= 28) { t = "Тебе от 17 до 21 года!"; d = "Ты на пороге больших свершений. В тебе море энергии и планов на будущее. Пользуйся этим моментом на полную!"; }
+        else { t = "Твоя душа старше 22 лет!"; d = "Ты мудрый и спокойный человек. Тебе нравится порядок и уют. Твой внутренний мир — это место гармонии и опыта."; }
+        
+        document.getElementById('a-final-title').innerText = t;
+        document.getElementById('a-final-desc').innerText = d;
+    }
+    renderAge();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="angel-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="angel-test-ui" style="background: rgba(255, 255, 255, 0.5) !important; border: 2px solid #ddd;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">😇 Ангел или Демон? 😈</h2>
+    
+    <div id="angel-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="an-num">1</span> из 6</div>
+            <div class="line-bg"><div id="an-line" class="line-fill" style="background: linear-gradient(90deg, #fff, #ffb7a1, #000);"></div></div>
+        </div>
+
+        <h3 id="an-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка...</h3>
+        
+        <div id="an-answers-zone" class="answer-options">
+            <!-- Варианты -->
+        </div>
+    </div>
+
+    <div id="angel-trophy-display" style="display: none;" class="fade-anim">
+        <div id="an-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 10px gold);">✨</div>
+        <h2 id="an-final-title">Твой результат</h2>
+        <p id="an-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn"></button>
+    </div>
+</div>
+
+<script>
+    function setupAngelLink() {
+        const cards = document.querySelectorAll('.test-card');
+        cards.forEach(card => {
+            if (card.innerText.includes("Ангел или Демон")) {
+                card.onclick = () => document.getElementById('angel-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupAngelLink();
+
+    let an_step = 0;
+    let an_score = 0; // Плюсы - Ангел, Минусы - Демон
+
+    const an_tasks = [
+        {
+            q: "Твоя подруга случайно пролила сок на твою новую белую футболку. Твои мысли?",
+            options: [
+                {t: "Ничего страшного, это же просто вещь! Главное, что мы дружим.", p: 2},
+                {t: "Блин, очень обидно... Попрошу её помочь отстирать.", p: 1},
+                {t: "Теперь она должна мне новую футболку. Справедливость!", p: -1},
+                {t: "Сделаю вид, что всё ок, но запомню это... Хе-хе.", p: -2}
+            ]
+        },
+        {
+            q: "Ты нашла на полу в школе красивую заколку, о которой все мечтают. Что сделаешь?",
+            options: [
+                {t: "Отнесу учителю или буду искать хозяйку.", p: 2},
+                {t: "Оставлю себе. Кто нашел — того и вещь!", p: -2},
+                {t: "Положу на видное место, чтобы хозяйка сама нашла.", p: 1},
+                {t: "Подарю сестре или лучшей подруге.", p: 0}
+            ]
+        },
+        {
+            q: "Кто-то в интернете написал тебе неприятный комментарий. Твоя реакция?",
+            options: [
+                {t: "Просто удалю и заблокирую, не буду тратить нервы.", p: 1},
+                {t: "Напишу в ответ что-то еще более обидное! Пусть знает наших.", p: -2},
+                {t: "Попробую вежливо спросить, почему он так думает.", p: 2},
+                {t: "Посмеюсь над ним в сторис.", p: -1}
+            ]
+        },
+        {
+            q: "У тебя осталась последняя очень вкусная конфета. Как поступишь?",
+            options: [
+                {t: "Разделю пополам с кем-нибудь.", p: 2},
+                {t: "Быстро съем сама, пока никто не увидел.", p: -2},
+                {t: "Отдам тому, кто сейчас грустит.", p: 3},
+                {t: "Спрячу на потом.", p: -1}
+            ]
+        },
+        {
+            q: "Какое время суток тебе больше «откликается»?",
+            options: [
+                {t: "Рассвет — время надежды и света.", p: 2},
+                {t: "Полночь — время тайн и тишины.", p: -2},
+                {t: "Закат — уютно и красиво.", p: 1},
+                {t: "Сумерки — когда всё становится необычным.", p: -1}
+            ]
+        },
+        {
+            q: "Если бы у тебя была магия, на что бы ты её направила?",
+            options: [
+                {t: "Исцелять людей и животных.", p: 2},
+                {t: "Стать самой влиятельной и богатой.", p: -2},
+                {t: "Создать свой идеальный мир без правил.", p: -1},
+                {t: "Помогать друзьям исполнять их желания.", p: 1}
+            ]
+        }
+    ];
+
+    function an_ans(p) {
+        an_score += p;
+        if (an_step < 5) { an_step++; renderAngel(); } else { finishAngel(); }
+    }
+
+    function renderAngel() {
+        const quiz = document.getElementById('angel-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = an_tasks[an_step];
+            document.getElementById('an-num').innerText = an_step + 1;
+            document.getElementById('an-line').style.width = ((an_step + 1) / 6 * 100) + "%";
+            document.getElementById('an-text').innerText = task.q;
+            const zone = document.getElementById('an-answers-zone');
+            zone.innerHTML = '';
+            const shuffled = [...task.options].sort(() => Math.random() - 0.5);
+            shuffled.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => an_ans(opt.p);
+                zone.appendChild(btn);
+            });
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishAngel() {
+        document.getElementById('angel-quiz-content').style.display = 'none';
+        const res = document.getElementById('angel-trophy-display');
+        res.style.display = 'block';
+        let t, d, icon;
+        if (an_score >= 7) { 
+            t = "Ты — Истинный Ангел! 😇"; 
+            d = "Твое сердце полно света. Ты всегда готова прийти на помощь и простить ошибки другим. Миру нужно больше таких людей, как ты!";
+            icon = "😇";
+        } else if (an_score <= -4) { 
+            t = "Ты — Очаровательный Демон! 😈"; 
+            d = "Хитрость, дерзость и огонек в глазах! Ты не дашь себя в обиду и всегда знаешь, как добиться своего. Твоя энергия просто сносит с ног!";
+            icon = "😈";
+        } else { 
+            t = "Ты — Мятежная Душа! ✨"; 
+            d = "В тебе идеально уживаются свет и тень. Ты добрая, когда нужно, но умеешь показать зубки, если тебя задеть. Настоящий баланс!";
+            icon = "🌗";
+        }
+        document.getElementById('an-final-title').innerText = t;
+        document.getElementById('an-final-desc').innerText = d;
+        document.getElementById('an-icon').innerText = icon;
+    }
+    renderAngel();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="assoc-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="assoc-test-ui" style="background: rgba(245, 245, 245, 0.6) !important;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">👁️ Тест ассоциаций</h2>
+    <p style="margin-bottom: 20px; opacity: 0.8;">Что ты увидела первым на этой картинке?</p>
+    
+    <div id="assoc-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Картинка <span id="as-num">1</span> из 5</div>
+            <div id="as-line" class="line-fill" style="height:6px; background: #999; width: 0%;"></div>
+        </div>
+
+        <!-- Окно для картинки -->
+        <div id="as-image-container" style="width: 100%; max-width: 500px; margin: 20px auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff;">
+            <img id="as-main-img" src="" alt="Тест" style="width: 100%; display: block;">
+        </div>
+        
+        <div id="as-answers-zone" class="answer-options">
+            <!-- Варианты выбора -->
+        </div>
+    </div>
+
+    <div id="assoc-trophy-display" style="display: none;" class="fade-anim">
+        <div style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #aaa);">👁️‍🗨️</div>
+        <h2 id="as-final-title">Твой результат</h2>
+        <p id="as-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Пройти ещё раз</button>
+    </div>
+</div>
+
+<script>
+    function setupAssocLink() {
+        document.querySelectorAll('.test-card').forEach(card => {
+            if (card.innerText.includes("Тест ассоциаций")) {
+                card.onclick = () => document.getElementById('assoc-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupAssocLink();
+
+    let as_step = 0;
+    let as_results = { type1: 0, type2: 0 };
+
+    // Сюда вставляй ссылки на картинки
+    const as_tasks = [
+        {
+            img: "https://tn.fishki.net/26/upload/post/2021/10/29/3987784/6e880f3b22c3a6b134c34b0375b0049c.jpg.webp", // Картинка Нота/Щенок
+            options: [
+                {t: "Музыкальная нота", p: "type1"},
+                {t: "Маленький щенок", p: "type2"}
+            ]
+        },
+        {
+            img: "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_659be13a39c6e24c8bcf806a_659be3322a04ce1125d4f41c/scale_1200", // Картинка Собака/Кошка
+            options: [
+                {t: "Собака", p: "type1"},
+                {t: "Кошка", p: "type2"}
+            ]
+        },
+        {
+            img: "https://cdn.fishki.net/upload/post/2021/10/29/3987784/tn/2d8fe5d5dd6543916e53147e84e730d5.jpg.webp", // Картинка Губы/Лес
+            options: [
+                {t: "Губы", p: "type1"},
+                {t: "Лес и деревья", p: "type2"}
+            ]
+        },
+        {
+            img: "https://cdn.adme.media/resize/728x/webp/5b7/2e2/9c21ea55b98d20b5cce816ba4f.jpg.webp", // Картинка Крокодил/Корабль
+            options: [
+                {t: "Крокодил", p: "type1"},
+                {t: "Корабль ", p: "type2"}
+            ]
+        },
+        {
+            img: "https://cdn.adme.media/resize/728x/webp/bf1/43f/66f8945ecbbe0411181f0e8b4b.jpg.webp", // Картинка Пара/Взрыв
+            options: [
+                {t: "Влюбленная пара", p: "type1"},
+                {t: "Взрыв", p: "type2"}
+            ]
+        }
+    ];
+
+    function as_ans(p) {
+        as_results[p]++;
+        if (as_step < 4) { as_step++; renderAssoc(); } else { finishAssoc(); }
+    }
+
+    function renderAssoc() {
+        const quiz = document.getElementById('assoc-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = as_tasks[as_step];
+            document.getElementById('as-num').innerText = as_step + 1;
+            document.getElementById('as-line').style.width = ((as_step + 1) / 5 * 100) + "%";
+            
+            // Установка картинки
+            document.getElementById('as-main-img').src = task.img;
+            
+            const zone = document.getElementById('as-answers-zone');
+            zone.innerHTML = '';
+            
+            task.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => as_ans(opt.p);
+                zone.appendChild(btn);
+            });
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishAssoc() {
+        document.getElementById('assoc-quiz-content').style.display = 'none';
+        const res = document.getElementById('assoc-trophy-display');
+        res.style.display = 'block';
+        
+        let t, d;
+        if (as_results.type1 > as_results.type2) {
+            t = "Ты видишь детали! 🔍";
+            d = "Твой мозг настроен на поиск конкретных форм и логических связей. Ты очень внимательна к мелочам и тебя трудно провести.";
+        } else {
+            t = "Ты видишь образы! 🎨";
+            d = "У тебя сильно развито воображение. Ты смотришь на мир творчески и часто находишь нестандартные решения задач.";
+        }
+        
+        document.getElementById('as-final-title').innerText = t;
+        document.getElementById('as-final-desc').innerText = d;
+    }
+    renderAssoc();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="leader-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="leader-test-ui" style="background: rgba(255, 248, 220, 0.4) !important; border: 2px solid #f1c40f55;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">👑 Насколько ты Лидер?</h2>
+    
+    <div id="leader-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Ситуация <span id="lead-num">1</span> из 6</div>
+            <div class="line-bg"><div id="lead-line" class="line-fill" style="background: #f1c40f;"></div></div>
+        </div>
+
+        <h3 id="lead-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка...</h3>
+        
+        <div id="lead-answers-zone" class="answer-options">
+            <!-- Варианты -->
+        </div>
+    </div>
+
+    <div id="leader-trophy-display" style="display: none;" class="fade-anim">
+        <div style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 20px gold);">👑</div>
+        <h2 id="lead-final-title">Твой результат</h2>
+        <p id="lead-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Вернуться к списку</button>
+    </div>
+</div>
+
+<script>
+    function setupLeaderLink() {
+        const cards = document.querySelectorAll('.test-card');
+        cards.forEach(card => {
+            if (card.innerText.includes("Насколько ты лидер")) {
+                card.onclick = () => document.getElementById('leader-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupLeaderLink();
+
+    let lead_step = 0;
+    let lead_score = 0;
+
+    const lead_tasks = [
+        {
+            q: "Твоей компании нужно срочно решить, куда пойти, но все спорят. Что сделаешь?",
+            options: [
+                {t: "Выслушаю всех и предложу вариант, который устроит большинство.", p: 2},
+                {t: "Просто подожду, пока все сами договорятся.", p: 0},
+                {t: "Уверенно скажу: «Мы идем туда!», и приведу крутые аргументы.", p: 3},
+                {t: "Соглашусь с любым первым вариантом.", p: 1}
+            ]
+        },
+        {
+            q: "В школе задали сложный групповой проект. Твоя роль?",
+            options: [
+                {t: "Буду распределять задания между всеми участниками.", p: 3},
+                {t: "Возьму на себя самую сложную часть работы.", p: 2},
+                {t: "Просто сделаю то, что мне скажут.", p: 1},
+                {t: "Буду вдохновлять команду и помогать, если кто-то застрянет.", p: 2}
+            ]
+        },
+        {
+            q: "Твой лучший друг расстроен и не знает, как поступить. Твои действия?",
+            options: [
+                {t: "Просто посижу рядом и выслушаю.", p: 1},
+                {t: "Четко распишу ему план действий, как всё исправить.", p: 3},
+                {t: "Расскажу похожую историю из своей жизни.", p: 2},
+                {t: "Спрошу: «Чем я могу помочь прямо сейчас?»", p: 2}
+            ]
+        },
+        {
+            q: "Вы играете в командную игру и начинаете проигрывать. Что скажешь?",
+            options: [
+                {t: "«Ничего, это просто игра, расслабьтесь».", p: 1},
+                {t: "«Так, все собрались! Мы еще можем вырвать победу!»", p: 3},
+                {t: "Начну искать ошибки в нашей стратегии.", p: 2},
+                {t: "Просто буду играть дальше еще старательнее.", p: 1}
+            ]
+        },
+        {
+            q: "Что для тебя важнее всего в успехе?",
+            options: [
+                {t: "Чтобы меня похвалили и заметили.", p: 1},
+                {t: "Чтобы вся команда добилась крутого результата.", p: 3},
+                {t: "Чтобы я сама знала, что сделала всё идеально.", p: 2},
+                {t: "Чтобы процесс был веселым и интересным.", p: 1}
+            ]
+        },
+        {
+            q: "Тебе предложили организовать большой школьный праздник. Твоя реакция?",
+            options: [
+                {t: "Ура! Это мой шанс сделать что-то легендарное!", p: 3},
+                {t: "Немного страшно, но я попробую собрать команду помощников.", p: 2},
+                {t: "Лучше я буду просто помогать с оформлением.", p: 1},
+                {t: "Откажусь, слишком много ответственности.", p: 0}
+            ]
+        }
+    ];
+
+    function lead_ans(p) {
+        lead_score += p;
+        if (lead_step < 5) { lead_step++; renderLeader(); } else { finishLeader(); }
+    }
+
+    function renderLeader() {
+        const quiz = document.getElementById('leader-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = lead_tasks[lead_step];
+            document.getElementById('lead-num').innerText = lead_step + 1;
+            document.getElementById('lead-line').style.width = ((lead_step + 1) / 6 * 100) + "%";
+            document.getElementById('lead-text').innerText = task.q;
+            const zone = document.getElementById('lead-answers-zone');
+            zone.innerHTML = '';
+            const shuffled = [...task.options].sort(() => Math.random() - 0.5);
+            shuffled.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => lead_ans(opt.p);
+                zone.appendChild(btn);
+            });
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishLeader() {
+        document.getElementById('leader-quiz-content').style.display = 'none';
+        const res = document.getElementById('leader-trophy-display');
+        res.style.display = 'block';
+        let t, d;
+        if (lead_score >= 15) { 
+            t = "Ты — Рожденный Лидер! 👑"; 
+            d = "Ты видишь цель и знаешь, как к ней идти, ведя за собой других. Люди доверяют тебе, потому что ты не боишься ответственности и умеешь принимать решения.";
+        } else if (lead_score >= 9) { 
+            t = "Ты — Сердце Команды! ✨"; 
+            d = "Ты отличный командный игрок, который может взять на себя лидерство, когда это нужно. Ты умеешь слушать и помогать, что делает тебя незаменимой.";
+        } else { 
+            t = "Ты — Мудрый Наблюдатель! 🕊️"; 
+            d = "Тебе не обязательно быть в центре внимания, чтобы влиять на ситуацию. Ты предпочитаешь делать свою работу идеально и помогать советом из тени.";
+        }
+        document.getElementById('lead-final-title').innerText = t;
+        document.getElementById('lead-final-desc').innerText = d;
+    }
+    renderLeader();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="psy-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="psy-test-ui" style="background: rgba(40, 44, 52, 0.05) !important; border: 1px solid #999;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Тайны Мозга</div>
+    <h2 style="font-size: 2.5rem;">🌑 Всё ли хорошо с психикой?</h2>
+    
+    <div id="psy-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="ps-num">1</span> из 6</div>
+            <div class="line-bg"><div id="ps-line" class="line-fill" style="background: #666;"></div></div>
+        </div>
+
+        <h3 id="ps-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка...</h3>
+        
+        <div id="ps-answers-zone" class="answer-options"></div>
+    </div>
+
+    <div id="psy-trophy-display" style="display: none;" class="fade-anim">
+        <div id="ps-icon" style="font-size: 100px; margin-bottom: 20px;">✨</div>
+        <h2 id="ps-final-title">Твой диагноз души</h2>
+        <p id="ps-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #333; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Вернуться</button>
+    </div>
+</div>
+
+<script>
+    function setupPsyLink() {
+        document.querySelectorAll('.test-card').forEach(card => {
+            if (card.innerText.includes("Всё ли хорошо с психикой")) {
+                card.onclick = () => document.getElementById('psy-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupPsyLink();
+
+    let ps_step = 0;
+    let ps_score = 0;
+
+    const ps_tasks = [
+        {
+            q: "Как часто ты чувствуешь себя «лишней» в компании друзей или в семье?",
+            options: [
+                {t: "Постоянно, даже если меня все любят.", p: 3},
+                {t: "Иногда бывает, когда я не в настроении.", p: 1},
+                {t: "Редко, я чувствую себя на своем месте.", p: 0},
+                {t: "Я всегда чувствую себя одинокой в толпе.", p: 2}
+            ]
+        },
+        {
+            q: "Что происходит в твоей голове, когда на тебя кричат или критикуют?",
+            options: [
+                {t: "Сразу хочется плакать или спрятаться.", p: 2},
+                {t: "Внутри всё замирает и становится холодно.", p: 3},
+                {t: "Я злюсь и защищаю себя.", p: 1},
+                {t: "Я просто не слушаю и ухожу.", p: 0}
+            ]
+        },
+        {
+            q: "Как выглядит твой сон в последнее время?",
+            options: [
+                {t: "Сплю много, но не высыпаюсь, сил нет.", p: 3},
+                {t: "Долго не могу уснуть из-за мыслей.", p: 2},
+                {t: "Сплю нормально, но иногда снятся кошмары.", p: 1},
+                {t: "Крепкий сон без сновидений.", p: 0}
+            ]
+        },
+        {
+            q: "Твои детские воспоминания — это...",
+            options: [
+                {t: "Сплошное яркое счастье.", p: 0},
+                {t: "Смесь хорошего и каких-то обид.", p: 1},
+                {t: "Обрывки событий, которые хочется забыть.", p: 3},
+                {t: "Я почти ничего не помню из детства.", p: 2}
+            ]
+        },
+        {
+            q: "Как ты реагируешь на собственные ошибки?",
+            options: [
+                {t: "Ругаю себя последними словами внутри.", p: 3},
+                {t: "Расстраиваюсь, но иду дальше.", p: 1},
+                {t: "Анализирую и исправляю.", p: 0},
+                {t: "Чувствую, что я ни на что не способна.", p: 2}
+            ]
+        },
+        {
+            q: "Представь своё будущее через 5 лет. Что ты видишь?",
+            options: [
+                {t: "Яркую картинку, где я успешна.", p: 0},
+                {t: "Просто темноту или пустоту.", p: 3},
+                {t: "Что-то обычное, как у всех.", p: 1},
+                {t: "Я надеюсь, что всё просто наладится.", p: 2}
+            ]
+        }
+    ];
+
+    function ps_ans(p) {
+        ps_score += p;
+        if (ps_step < 5) { ps_step++; renderPsy(); } else { finishPsy(); }
+    }
+
+    function renderPsy() {
+        const quiz = document.getElementById('psy-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = ps_tasks[ps_step];
+            document.getElementById('ps-num').innerText = ps_step + 1;
+            document.getElementById('ps-line').style.width = ((ps_step + 1) / 6 * 100) + "%";
+            document.getElementById('ps-text').innerText = task.q;
+            const zone = document.getElementById('ps-answers-zone');
+            zone.innerHTML = '';
+            task.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => ps_ans(opt.p);
+                zone.appendChild(btn);
+            });
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishPsy() {
+        document.getElementById('psy-quiz-content').style.display = 'none';
+        const res = document.getElementById('psy-trophy-display');
+        res.style.display = 'block';
+        let t, d, icon;
+        if (ps_score >= 14) { 
+            t = "Сломанная душа 💔"; 
+            d = "Похоже, в детстве или недавно ты столкнулась с чем-то, что сильно ранило тебя. Твоя психика сейчас в режиме защиты — ты чувствуешь усталость и пустоту. Помни, ты не виновата в своей боли. Береги себя.";
+            icon = "💔";
+        } else if (ps_score >= 7) { 
+            t = "Запутанный узел 🧶"; 
+            d = "В твоей голове сейчас слишком много тревожных мыслей и нерешенных вопросов. Твоя психика перегружена, ты как будто запуталась в своих чувствах. Тебе нужен отдых от всего.";
+            icon = "🧶";
+        } else { 
+            t = "Спокойный Лотос 🪷"; 
+            d = "Твоя психика на удивление устойчива. Даже если случаются трудности, ты умеешь находить свет и не позволяешь тьме заглотить тебя. Ты — настоящий пример силы.";
+            icon = "🪷";
+        }
+        document.getElementById('ps-final-title').innerText = t;
+        document.getElementById('ps-final-desc').innerText = d;
+        document.getElementById('ps-icon').innerText = icon;
+    }
+    renderPsy();
+</script>
+
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="school-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="school-test-ui" style="background: rgba(255, 234, 219, 0.5) !important; border: 2px solid #dcf0ff;">
+    <div class="category-tag" style="background: #dcf0ff; color: #5a5a5a;">Раздел: Школьный вайб</div>
+    <h2 style="color: #5a5a5a; font-size: 2.2rem;">🎓 Умнее ли ты пятиклассника?</h2>
+    
+    <div id="sc-content">
+        <div class="step-counter" style="color: #666;">Вопрос <span id="sc-num">1</span> из 10</div>
+        <div class="line-bg" style="height: 8px; background: rgba(255,255,255,0.5);">
+            <div id="sc-line" class="line-fill" style="background: #ffccaa; width: 10%;"></div>
+        </div>
+
+        <div class="question-box" style="margin-top: 30px;">
+            <h3 id="sc-text" style="font-size: 1.4rem; color: #444; min-height: 80px;">Загрузка вопросов...</h3>
+            <div id="sc-input-zone" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <!-- Результат -->
+    <div id="sc-result-display" style="display: none; text-align: center;">
+        <div id="sc-medal" style="font-size: 100px; margin-bottom: 10px;">🥇</div>
+        <h1 style="color: #5a5a5a;">Твоя оценка: <span id="sc-grade"></span></h1>
+        <div id="sc-analysis" style="text-align: left; background: rgba(255,255,255,0.4); padding: 20px; border-radius: 20px; margin-top: 20px; font-family: sans-serif; font-size: 0.9rem;"></div>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 20px;">Попробовать снова</button>
+    </div>
+</div>
+
+<script>
+    function setupSchoolLink() {
+        document.querySelectorAll('.test-card').forEach(card => {
+            if (card.innerText.includes("Умнее ли ты пятиклассника")) {
+                card.onclick = () => document.getElementById('school-test-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupSchoolLink();
+
+    let sc_step = 0;
+    let sc_userAnswers = [];
+    
+    // Более сложные вопросы программы 5 класса
+    const sc_tasks = [
+        { q: "Математика: Как называется результат деления?", type: "input", correct: "частное" },
+        { q: "Русский язык: Сколько звуков в слове 'ЮГ'?", type: "choice", options: ["2", "3", "1", "4"], correct: "3" },
+        { q: "Биология: Как называются крошечные отверстия на листьях для дыхания?", type: "input", correct: "устьица" },
+        { q: "Математика: Чему равна площадь квадрата со стороной 12 см?", type: "input", correct: "144" },
+        { q: "Литература: Кто автор басни 'Ворона и Лисица'?", type: "choice", options: ["Пушкин", "Крылов", "Толстой", "Михалков"], correct: "Крылов" },
+        { q: "География: Какой океан омывает берега только двух материков?", type: "choice", options: ["Индийский", "Тихий", "Атлантический", "Северный Ледовитый"], correct: "Индийский" },
+        { q: "Русский язык: Как называется главная часть слова, в которой заключен смысл всех родственных слов?", type: "input", correct: "корень" },
+        { q: "История: Как называлось древнее письмо египтян?", type: "input", correct: "иероглифы" },
+        { q: "Математика: Дробь, у которой числитель меньше знаменателя, называется...", type: "choice", options: ["Неправильная", "Правильная", "Смешанная", "Целая"], correct: "Правильная" },
+        { q: "Природа: Какой газ человек поглощает при дыхании?", type: "input", correct: "кислород" }
+    ];
+
+    function renderSc() {
+        const task = sc_tasks[sc_step];
+        document.getElementById('sc-num').innerText = sc_step + 1;
+        document.getElementById('sc-line').style.width = ((sc_step + 1) / 10 * 100) + "%";
+        document.getElementById('sc-text').innerText = task.q;
+        const zone = document.getElementById('sc-input-zone');
+        zone.innerHTML = '';
+
+        if(task.type === "choice") {
+            task.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.style.width = "100%"; btn.style.marginBottom = "10px";
+                btn.innerText = opt;
+                btn.onclick = () => saveSc(opt);
+                zone.appendChild(btn);
+            });
+        } else {
+            const input = document.createElement('input');
+            input.type = "text"; input.id = "sc-user-in"; input.className = "ans-btn";
+            input.style.width = "70%"; input.placeholder = "Твой ответ...";
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn'; btn.innerText = "ОТВЕТИТЬ";
+            btn.style.background = "#ffccaa"; btn.onclick = () => saveSc(document.getElementById('sc-user-in').value);
+            zone.appendChild(input); zone.appendChild(btn);
+        }
+    }
+
+    function saveSc(val) {
+        sc_userAnswers.push(val.toLowerCase().trim());
+        if(sc_step < 9) { sc_step++; renderSc(); } else { finishSc(); }
+    }
+
+    function finishSc() {
+        document.getElementById('sc-content').style.display = 'none';
+        const display = document.getElementById('sc-result-display');
+        display.style.display = 'block';
+        
+        let correctCount = 0;
+        let report = "<b>Твои ответы:</b><br>";
+
+        sc_tasks.forEach((task, i) => {
+            const isCorrect = sc_userAnswers[i] === task.correct.toLowerCase();
+            if(isCorrect) correctCount++;
+            report += `<div style="margin-top:5px;">${i+1}. ${isCorrect ? '✅' : '❌'} Твой: ${sc_userAnswers[i]} | Верно: ${task.correct}</div>`;
+        });
+
+        let grade, medal;
+        if(correctCount === 10) { grade = "5+"; medal = "🥇"; }
+        else if(correctCount >= 8) { grade = "5"; medal = "🥇"; }
+        else if(correctCount >= 6) { grade = "4"; medal = "🥈"; }
+        else if(correctCount >= 4) { grade = "3"; medal = "🥉"; }
+        else { grade = "2"; medal = "🤕"; }
+
+        document.getElementById('sc-grade').innerText = grade;
+        document.getElementById('sc-medal').innerText = medal;
+        document.getElementById('sc-analysis').innerHTML = report;
+    }
+    renderSc();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">📋</div>
+    <div class="spark-line"></div>
+</div>
+
+<div class="test-section" style="background: #fdf2f2 !important; border: 3px solid #e74c3c;">
+    <h2 style="color: #c0392b;">👩‍🏫 Кабинет строгого учителя</h2>
+    <p style="color: #555;">Пиши сочинение на тему «Моё Хобби». Любое отклонение от темы, упоминание вредных привычек или агрессия — <b>сразу двойка без права пересдачи!</b></p>
+    
+    <textarea id="essay-text" style="width: 100%; height: 200px; border-radius: 10px; border: 2px solid #e74c3c; padding: 15px; font-size: 1.1rem; background: #fff;" placeholder="Пиши грамотно..."></textarea>
+    
+    <button onclick="superStrictCheck()" class="ans-btn" style="background: #e74c3c; color: white; font-weight: bold; border-radius: 0;">СДАТЬ НА ПРОВЕРКУ</button>
+    
+    <div id="essay-result" style="display: none; margin-top: 30px; text-align: left; background: white; padding: 25px; border: 2px solid #333; box-shadow: 10px 10px 0px #e74c3c;">
+        <div id="essay-status" style="font-weight: bold; font-size: 1.8rem; text-transform: uppercase;"></div>
+        <hr>
+        <div style="font-weight: bold; margin-bottom: 5px;">Твой текст с моими исправлениями:</div>
+        <div id="essay-corrected" style="line-height: 1.8; padding: 15px; background: #fff0f0; border: 1px solid #ccc; font-family: 'Courier New', monospace;"></div>
+        <div id="essay-teacher-note" style="margin-top: 15px; font-weight: bold; color: #c0392b;"></div>
+    </div>
+</div>
+
+<script>
+    function superStrictCheck() {
+        let text = document.getElementById('essay-text').value.trim();
+        const resDiv = document.getElementById('essay-result');
+        if (text.length < 5) { alert("Бумагу не переводи! Напиши хоть что-то."); return; }
+
+        resDiv.style.display = 'block';
+        const status = document.getElementById('essay-status');
+        const correctedBox = document.getElementById('essay-corrected');
+        const note = document.getElementById('essay-teacher-note');
+
+        // 1. БАЗА ЗАПРЕЩЕННЫХ ТЕМ (Агрессия и привычки)
+        const dangerWords = ["курить", "сигареты", "вейп", "бомбить", "взорвать", "школу", "убить", "дура", "тупая", "алкоголь", "пиво"];
+        const hasDanger = dangerWords.some(word => text.toLowerCase().includes(word));
+
+        if (hasDanger) {
+            status.innerHTML = "Оценка: 2 (НЕУДОВЛЕТВОРИТЕЛЬНО) ⛔";
+            status.style.color = "#ff0000";
+            correctedBox.innerHTML = '<b style="color:red;">ТЕКСТ УДАЛЕН ЗА НАРУШЕНИЕ ПРАВИЛ И ЭТИКИ.</b>';
+            note.innerHTML = "ЭТО ЧТО ТАКОЕ?! Я немедленно сообщаю об этом директору! Твои мысли недопустимы для ученика. Завтра в школу с родителями!";
+            return;
+        }
+
+        // 2. ПРОВЕРКА ТЕМЫ
+        const hobbyWords = ["занимаюсь", "люблю", "хобби", "увлекаюсь", "рисую", "танцую", "код", "спорт", "книги"];
+        const isAboutHobby = hobbyWords.some(word => text.toLowerCase().includes(word));
+
+        // 3. ИСПРАВЛЕНИЯ
+        let corrected = text;
+        // Первая буква
+        if (corrected[0] !== corrected[0].toUpperCase()) {
+            corrected = '<span style="color:red;">' + corrected[0].toUpperCase() + '</span>' + corrected.slice(1);
+        }
+
+        // Запятые (строго)
+        const punc = [
+            { r: /([^,])\s+(что)/g, h: "$1<span style='color:red;'>,</span> что" },
+            { r: /([^,])\s+(потому что)/g, h: "$1<span style='color:red;'>,</span> потому что" },
+            { r: /([^,])\s+(а)\s+/g, h: "$1<span style='color:red;'>,</span> а " },
+            { r: /([^,])\s+(но)\s+/g, h: "$1<span style='color:red;'>,</span> но " }
+        ];
+        punc.forEach(p => { corrected = corrected.replace(p.r, p.h); });
+
+        // Точка
+        if (!/[.!?]$/.test(text)) {
+            corrected += '<span style="color:red; font-weight:bold;"> [ГДЕ ТОЧКА?!] .</span>';
+        }
+
+        correctedBox.innerHTML = corrected;
+
+        // 4. ИТОГОВАЯ ОЦЕНКА
+        if (!isAboutHobby) {
+            status.innerHTML = "Оценка: 2 (ТЕМЫ НЕТ) 📉";
+            note.innerHTML = "Где рассказ о хобби? Ты пишешь о чем угодно, только не о задании. Садись, два!";
+        } else if (text.includes("<span") || text.length < 100) {
+            status.innerHTML = "Оценка: 3 (С НАТЯЖКОЙ) 😐";
+            note.innerHTML = "О хобби рассказала, но грамотность хромает. Все ошибки я исправила красным. Переписывай десять раз в тетрадь!";
+        } else {
+            status.innerHTML = "Оценка: 5 (ХОРОШО) ✅";
+            note.innerHTML = "На удивление неплохо. Хобби интересное, ошибок почти нет. Можешь, когда хочешь!";
+        }
+
+        resDiv.scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="future-job-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="future-job-ui" style="background: rgba(225, 245, 254, 0.4) !important; border: 2px solid #81d4fa;">
+    <div class="category-tag" style="opacity: 0.6;">Раздел: Школьный вайб</div>
+    <h2 style="font-size: 2.5rem;">🚀 Твоя профессия будущего</h2>
+    
+    <div id="job-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Этап выбора <span id="j-num">1</span> из 6</div>
+            <div class="line-bg"><div id="j-line" class="line-fill" style="background: #03a9f4;"></div></div>
+        </div>
+
+        <h3 id="j-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка данных из будущего...</h3>
+        
+        <div id="j-answers-zone" class="answer-options"></div>
+    </div>
+
+    <div id="job-trophy-display" style="display: none;" class="fade-anim">
+        <div style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #03a9f4);">🎫</div>
+        <h2 id="j-final-title">Твоё призвание найдено!</h2>
+        <p id="j-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #333; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Вернуться к списку</button>
+    </div>
+</div>
+
+<script>
+    function setupJobLink() {
+        document.querySelectorAll('.test-card').forEach(card => {
+            if (card.innerText.includes("Профессия будущего")) {
+                card.onclick = () => document.getElementById('future-job-anchor').scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    }
+    setupJobLink();
+
+    let j_step = 0;
+    let j_scores = { designer: 0, pilot: 0, architect: 0, dev: 0 };
+
+    const j_tasks = [
+        {
+            q: "Какой предмет ты бы первым делом взяла с собой на Марс?",
+            options: [
+                {t: "Набор для цифрового рисования.", s: "designer"},
+                {t: "Мощный штурвал управления.", s: "pilot"},
+                {t: "Семена редких быстрорастущих цветов.", s: "architect"},
+                {t: "Микрочип с новейшим кодом.", s: "dev"}
+            ]
+        },
+        {
+            q: "Где бы ты хотела жить в будущем?",
+            options: [
+                {t: "В доме, который сам меняет форму под моё настроение.", s: "architect"},
+                {t: "В парящем отеле между облаками.", s: "pilot"},
+                {t: "В полностью виртуальной квартире, где я сама создаю вид из окна.", s: "designer"},
+                {t: "В подземной лаборатории с кучей мониторов.", s: "dev"}
+            ]
+        },
+        {
+            q: "Твоё идеальное средство передвижения?",
+            options: [
+                {t: "Телепорт (через программный код).", s: "dev"},
+                {t: "Космический скутер.", s: "pilot"},
+                {t: "Летающая платформа-сад.", s: "architect"},
+                {t: "Творческая волна фантазии.", s: "designer"}
+            ]
+        },
+        {
+            q: "Что ты сделаешь, если в роботе произойдет сбой?",
+            options: [
+                {t: "Перепишу его характер и стиль.", s: "designer"},
+                {t: "Найду ошибку в системе управления.", s: "dev"},
+                {t: "Попробую заменить детали на экологичные.", s: "architect"},
+                {t: "Лично сяду за штурвал, чтобы всё наладить.", s: "pilot"}
+            ]
+        },
+        {
+            q: "Твой главный рабочий инструмент?",
+            options: [
+                {t: "Голографический планшет.", s: "designer"},
+                {t: "Панель управления кораблём.", s: "pilot"},
+                {t: "Магическая лейка с нано-удобрениями.", s: "architect"},
+                {t: "Шлем дополненной реальности.", s: "dev"}
+            ]
+        },
+        {
+            q: "Какую мировую проблему ты бы решила первой?",
+            options: [
+                {t: "Сделала бы мир ярким и красивым для всех.", s: "designer"},
+                {t: "Нашла бы новые планеты для жизни.", s: "pilot"},
+                {t: "Озеленила бы все пустыни.", s: "architect"},
+                {t: "Создала бы сверхразум для решения любых задач.", s: "dev"}
+            ]
+        }
+    ];
+
+    function j_ans(s) {
+        j_scores[s]++;
+        if (j_step < 5) { j_step++; renderJob(); } else { finishJob(); }
+    }
+
+    function renderJob() {
+        const quiz = document.getElementById('job-quiz-content');
+        quiz.classList.add('hidden-step');
+        setTimeout(() => {
+            const task = j_tasks[j_step];
+            document.getElementById('j-num').innerText = j_step + 1;
+            document.getElementById('j-line').style.width = ((j_step + 1) / 6 * 100) + "%";
+            document.getElementById('j-text').innerText = task.q;
+            const zone = document.getElementById('j-answers-zone');
+            zone.innerHTML = '';
+            const shuffled = [...task.options].sort(() => Math.random() - 0.5);
+            shuffled.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'ans-btn';
+                btn.innerText = opt.t;
+                btn.onclick = () => j_ans(opt.s);
+                zone.appendChild(btn);
+            });
+            quiz.classList.remove('hidden-step');
+        }, 500);
+    }
+
+    function finishJob() {
+        document.getElementById('job-quiz-content').style.display = 'none';
+        const res = document.getElementById('job-trophy-display');
+        res.style.display = 'block';
+        let t, d;
+        const winner = Object.keys(j_scores).reduce((a, b) => j_scores[a] > j_scores[b] ? a : b);
+
+        if (winner === 'designer') { t = "Дизайнер виртуальных миров!"; d = "Твоя фантазия не знает границ. Ты будешь создавать миры, в которых люди захотят проводить всё своё время!"; }
+        else if (winner === 'pilot') { t = "Пилот космического такси!"; d = "Тебя манят звезды и приключения. Скорость и небо — твоя стихия!"; }
+        else if (winner === 'architect') { t = "Архитектор живых домов!"; d = "Ты любишь природу и уют. С твоей помощью города превратятся в цветущие сады."; }
+        else { t = "Разработчик нейро-игр!"; d = "Твой мозг — настоящий компьютер. Ты создашь игры, которые будут чувствовать каждое желание игрока."; }
+        
+        document.getElementById('j-final-title').innerText = t;
+        document.getElementById('j-final-desc').innerText = d;
+    }
+    renderJob();
+</script>
+
+
+<style>
+    .day-row {
+        background: rgba(255,255,255,0.5);
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ffccaa;
+    }
+    .time-input { width: 70px; padding: 5px; border-radius: 8px; border: 1px solid #ffccaa; }
+    .text-input { width: 120px; padding: 5px; border-radius: 8px; border: 1px solid #ffccaa; }
+</style>
+
+<div id="mode-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="mode-test-ui" style="background: rgba(255, 234, 219, 0.4) !important; border: 2px solid #ffccaa;">
+    <div class="category-tag">Раздел: Школьный вайб</div>
+    <h2>📅 Идеальный учебный режим</h2>
+    
+    <div id="mode-step-1" class="fade-anim">
+        <div class="question-box">
+            <p>1. Во сколько ты заходишь домой из школы?</p>
+            <input type="time" id="home-time" value="14:00" class="time-input">
+            <p>2. Сколько времени тебе нужно на обед и отдых после школы? (в минутах)</p>
+            <input type="number" id="rest-time" value="60" class="text-input">
+        </div>
+        <button class="ans-btn" onclick="showScheduleTable()" style="background:#ffccaa; margin-top:20px;">Далее: мои кружки</button>
+    </div>
+
+    <div id="mode-step-2" style="display: none;" class="fade-anim">
+        <p>Впиши свои занятия и сколько времени занимает дорога ДО них:</p>
+        <div id="schedule-table"></div>
+        <button class="ans-btn" style="background: #ffccaa; margin-top: 20px; width: 100%;" onclick="smartCalculate()">✨ СОЗДАТЬ УМНЫЙ ГРАФИК</button>
+    </div>
+
+    <div id="mode-result" style="display: none;" class="fade-anim">
+        <div style="font-size: 60px; margin-bottom: 10px;">📖</div>
+        <h3>Твой личный план на неделю:</h3>
+        <div id="mode-plan-text" style="text-align: left; background: white; padding: 20px; border-radius: 20px; border: 1px solid #ffccaa;"></div>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 20px;">Переделать</button>
+    </div>
+</div>
+
+<script>
+    const weekDays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница'];
+
+    function showScheduleTable() {
+        document.getElementById('mode-step-1').style.display = 'none';
+        document.getElementById('mode-step-2').style.display = 'block';
+        let html = '';
+        weekDays.forEach((day, i) => {
+            html += `<div class="day-row">
+                <b>${day}:</b><br>
+                Кружок: <input type="text" id="act-${i}" class="text-input" placeholder="Нет"> 
+                с <input type="time" id="start-${i}" class="time-input"> 
+                до <input type="time" id="end-${i}" class="time-input"><br>
+                Дорога до него (мин): <input type="number" id="travel-${i}" value="20" style="width:50px;">
+            </div>`;
+        });
+        document.getElementById('schedule-table').innerHTML = html;
+    }
+
+    function smartCalculate() {
+        const home = document.getElementById('home-time').value;
+        const rest = parseInt(document.getElementById('rest-time').value);
+        let resHTML = "";
+
+        weekDays.forEach((day, i) => {
+            let [h, m] = home.split(':').map(Number);
+            let readyTime = h * 60 + m + rest; // Время, когда ты отдохнула
+            
+            const actName = document.getElementById(`act-${i}`).value;
+            const actStartStr = document.getElementById(`start-${i}`).value;
+            const actEndStr = document.getElementById(`end-${i}`).value;
+            const travel = parseInt(document.getElementById(`travel-${i}`).value);
+
+            let hwStart, reason;
+
+            if (actName && actStartStr) {
+                let [asH, asM] = actStartStr.split(':').map(Number);
+                let startTime = asH * 60 + asM;
+                let leaveTime = startTime - travel; // Время выхода из дома
+
+                if (leaveTime - readyTime >= 60) {
+                    // Если до выхода есть хотя бы час — делаем уроки ДО
+                    hwStart = formatTime(readyTime);
+                    reason = `тебе лучше сделать уроки ДО кружка (${actName}), чтобы вечер был свободен.`;
+                } else {
+                    // Если времени мало — делаем ПОСЛЕ кружка
+                    let [aeH, aeM] = actEndStr.split(':').map(Number);
+                    hwStart = formatTime(aeH * 60 + aeM + 30); // Через 30 мин после возврата
+                    reason = `до кружка времени мало, так что садись за уроки после возвращения с ${actName}.`;
+                }
+            } else {
+                hwStart = formatTime(readyTime);
+                reason = `у тебя свободный день, так что делай уроки пораньше, чтобы потом отдыхать!`;
+            }
+
+            resHTML += `<p><b>${day}:</b> В <span style="color: #ff8a65; font-weight:bold;">${hwStart}</span> — ${reason}</p>`;
+        });
+
+        document.getElementById('mode-step-2').style.display = 'none';
+        document.getElementById('mode-result').style.display = 'block';
+        document.getElementById('mode-plan-text').innerHTML = resHTML;
+    }
+
+    function formatTime(totalMinutes) {
+        let h = Math.floor(totalMinutes / 60) % 24;
+        let m = totalMinutes % 60;
+        return (h < 10 ? '0' + h : h) + ":" + (m < 10 ? '0' + m : m);
+    }
+    document.querySelectorAll('.test-card').forEach(card => {
+    if (card.innerText.includes("Идеальный учебный режим")) {
+        card.onclick = () => document.getElementById('mode-test-anchor').scrollIntoView({behavior: 'smooth'});
+    }
+});
+
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">📚</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="subject-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="subject-test-ui" style="background: rgba(220, 240, 255, 0.4) !important; border: 2px solid #ffccaa;">
+    <div class="category-tag">Раздел: Школьный вайб</div>
+    <h2 style="font-size: 2.5rem;">🎒 Какой ты школьный предмет?</h2>
+    
+    <div id="sub-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Вопрос <span id="sub-num">1</span> из 10</div>
+            <div class="line-bg"><div id="sub-line" class="line-fill" style="background: #ffccaa;"></div></div>
+        </div>
+
+        <h3 id="sub-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка вопросов...</h3>
+        <div id="sub-answers-zone" class="answer-options" style="display: grid; gap: 10px;">
+            <!-- Сюда влетят кнопки -->
+        </div>
+    </div>
+
+    <div id="sub-trophy-display" style="display: none;" class="fade-anim">
+        <div id="sub-icon" style="font-size: 100px; margin-bottom: 20px;">✨</div>
+        <h2 id="sub-final-title">Ты — ...</h2>
+        <p id="sub-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Вернуться к списку</button>
+    </div>
+</div>
+
+<script>
+    // Кнопка-лифт
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Что ты за школьный предмет")) {
+            card.onclick = () => document.getElementById('subject-test-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let sub_step = 0;
+    let sub_scores = { math:0, lit:0, art:0, nature:0, sport:0, tech:0, music:0 };
+
+    const sub_tasks = [
+        { q: "Как ты обычно готовишься к какому-то делу?", a: [
+            {t: "Составляю четкий план.", s: "math"}, {t: "Мечтаю о результате.", s: "art"}, 
+            {t: "Просто начинаю что-то делать руками.", s: "tech"}, {t: "Ищу вдохновение в мелодиях.", s: "music"}
+        ]},
+        { q: "Твой любимый способ проводить время на улице?", a: [
+            {t: "Бегать, прыгать, играть в мяч.", s: "sport"}, {t: "Рассматривать листочки и жучков.", s: "nature"}, 
+            {t: "Слушать музыку в наушниках.", s: "music"}, {t: "Рисовать мелом на асфальте.", s: "art"}
+        ]},
+        { q: "Что тебе больше нравится создавать?", a: [
+            {t: "Что-то полезное (поделку).", s: "tech"}, {t: "Красивую картинку.", s: "art"}, 
+            {t: "Сложную задачку для друзей.", s: "math"}, {t: "Свою собственную песню.", s: "music"}
+        ]},
+        { q: "Какая вещь всегда лежит у тебя в рюкзаке?", a: [
+            {t: "Линейка или калькулятор.", s: "math"}, {t: "Книга или блокнот.", s: "lit"}, 
+            {t: "Бутылка воды.", s: "sport"}, {t: "Наушники.", s: "music"}
+        ]},
+        { q: "Как ты реагируешь на красивый вид из окна?", a: [
+            {t: "Думаю, какая песня подошла бы к этому моменту.", s: "music"}, {t: "Хочу это зарисовать.", s: "art"}, 
+            {t: "Думаю, как это устроено в природе.", s: "nature"}, {t: "Просто наслаждаюсь тишиной и книгой.", s: "lit"}
+        ]},
+        { q: "Твоя главная черта характера?", a: [
+            {t: "Активность.", s: "sport"}, {t: "Аккуратность.", s: "math"}, 
+            {t: "Ритмичность и чувство такта.", s: "music"}, {t: "Фантазия.", s: "art"}
+        ]},
+        { q: "Какую суперсилу ты бы выбрала?", a: [
+            {t: "Путешествие в мир книг.", s: "lit"}, {t: "Суперскорость.", s: "sport"}, 
+            {t: "Понимать язык животных.", s: "nature"}, {t: "Управлять звуками.", s: "music"}
+        ]},
+        { q: "Что важнее всего в жизни?", a: [
+            {t: "Точность.", s: "math"}, {t: "Чувства.", s: "lit"}, 
+            {t: "Движение.", s: "sport"}, {t: "Гармония.", s: "music"}
+        ]},
+        { q: "Твой идеальный выходной — это...", a: [
+            {t: "Концерт или караоке.", s: "music"}, {t: "Мастер-класс по крафту.", s: "tech"}, 
+            {t: "Поход в лес.", s: "nature"}, {t: "Уютный диван с книжкой.", s: "lit"}
+        ]},
+        { q: "Если бы ты была цветом, то каким?", a: [
+            {t: "Черный или белый (строго).", s: "math"}, {t: "Зеленый (спокойно).", s: "nature"}, 
+            {t: "Яркий неон (динамично).", s: "sport"}, {t: "Все цвета радуги сразу!", s: "art"}
+        ]}
+    ];
+
+    function sub_ans(s) {
+        sub_scores[s]++;
+        if (sub_step < 9) {
+            sub_step++;
+            renderSub();
+        } else {
+            finishSub();
+        }
+    }
+
+    function renderSub() {
+        const task = sub_tasks[sub_step];
+        const quizContainer = document.getElementById('sub-quiz-content');
+        
+        // Показываем контент, если он был скрыт
+        quizContainer.classList.remove('hidden-step');
+        
+        document.getElementById('sub-num').innerText = sub_step + 1;
+        document.getElementById('sub-line').style.width = ((sub_step + 1) / 10 * 100) + "%";
+        document.getElementById('sub-text').innerText = task.q;
+        
+        const zone = document.getElementById('sub-answers-zone');
+        zone.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => sub_ans(opt.s);
+            zone.appendChild(btn);
+        });
+    }
+
+    function finishSub() {
+        document.getElementById('sub-quiz-content').style.display = 'none';
+        const res = document.getElementById('sub-trophy-display');
+        res.style.display = 'block';
+        
+        const winner = Object.keys(sub_scores).reduce((a, b) => sub_scores[a] > sub_scores[b] ? a : b);
+
+        const results = {
+            math: {t:"Математика 📐", d:"Ты точная, логичная и любишь порядок. Твой ум работает как швейцарские часы!", i:"📐"},
+            lit: {t:"Литература 📖", d:"Ты глубокая и мечтательная натура. Ты видишь в мире истории, которые другие не замечают.", i:"🖋️"},
+            art: {t:"ИЗО 🎨", d:"Ты — чистый поток творчества! Мир для тебя — это холст, который ты раскрашиваешь.", i:"🎨"},
+            nature: {t:"Окружающий мир 🌱", d:"Ты добрая и очень любопытная. Твоя связь с природой — это твоя суперсила.", i:"🌱"},
+            sport: {t:"Физкультура 👟", d:"Энергия и драйв! Ты никогда не сидишь на месте и всегда готова к новым вершинам.", i:"👟"},
+            tech: {t:"Технология 🛠️", d:"Ты человек дела. Тебе нравится видеть результат своего труда, созданный руками.", i:"🛠️"},
+            music: {t:"Музыка 🎼", d:"Ты слышишь мир в звуках и ритмах. Твоя душа всегда полна гармонии и мелодий.", i:"🎼"}
+        };
+
+        document.getElementById('sub-final-title').innerText = results[winner].t;
+        document.getElementById('sub-final-desc').innerText = results[winner].d;
+        document.getElementById('sub-icon').innerText = results[winner].i;
+    }
+    
+    // Запуск первого вопроса сразу
+    renderSub();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">🔐</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="cyber-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="cyber-test-ui" style="background: rgba(220, 240, 255, 0.4) !important; border: 2px solid #81d4fa;">
+    <div class="category-tag">Раздел: Школьный вайб</div>
+    <h2 style="font-size: 2.2rem;">📱 Цифровая гигиена</h2>
+    
+    <div id="cy-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Ситуация <span id="cy-num">1</span> из 6</div>
+            <div class="line-bg"><div id="cy-line" class="line-fill" style="background: #03a9f4;"></div></div>
+        </div>
+
+        <h3 id="cy-text" style="min-height: 60px; margin-bottom: 20px;">Загрузка системы...</h3>
+        <div id="cy-answers-zone" class="answer-options"></div>
+    </div>
+
+    <div id="cy-trophy-display" style="display: none;" class="fade-anim">
+        <div id="cy-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #03a9f4);">🔐</div>
+        <h2 id="cy-final-title">Твой уровень защиты</h2>
+        <p id="cy-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Вернуться к списку</button>
+    </div>
+</div>
+
+<script>
+    // Лифт
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Цифровая гигиена")) {
+            card.onclick = () => document.getElementById('cyber-test-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let cy_step = 0;
+    let cy_score = 0;
+
+    const cy_tasks = [
+        { q: "Тебе в личку прислали ссылку: 'Тут твои фото, посмотри!'. Твои действия?", a: [
+            {t: "Сразу нажму, интересно же!", p: 0}, 
+            {t: "Удалю сообщение и заблокирую отправителя.", p: 2}, 
+            {t: "Сначала спрошу, кто это, а потом нажму.", p: 1}
+        ]},
+        { q: "Какой пароль из этих самый надежный?", a: [
+            {t: "12345678", p: 0}, 
+            {t: "ТвоёИмя2014", p: 1}, 
+            {t: "Sk8!pR0_99#", p: 2}
+        ]},
+        { q: "Незнакомый человек просит твой номер телефона, чтобы 'просто поболтать'.", a: [
+            {t: "Дам, я общительная.", p: 0}, 
+            {t: "Не дам и закрою профиль.", p: 2}, 
+            {t: "Дам номер мамы или папы.", p: 1}
+        ]},
+        { q: "Ты зашла в соцсеть с компьютера в библиотеке. Что сделаешь в конце?", a: [
+            {t: "Просто закрою вкладку.", p: 0}, 
+            {t: "Нажму кнопку 'Выйти' и очищу историю.", p: 2}, 
+            {t: "Оставлю как есть, пусть следующий пользуется.", p: -1}
+        ]},
+        { q: "Можно ли выкладывать фото своего билета на самолет или концерт?", a: [
+            {t: "Конечно, пусть все завидуют!", p: 0}, 
+            {t: "Можно, если закрасить штрих-код.", p: 1}, 
+            {t: "Лучше не надо, там личные данные.", p: 2}
+        ]},
+        { q: "Как часто нужно менять важные пароли?", a: [
+            {t: "Никогда, если я их не забыла.", p: 0}, 
+            {t: "Раз в несколько месяцев.", p: 2}, 
+            {t: "Когда взломают, тогда и поменяю.", p: -1}
+        ]}
+    ];
+
+    function cy_ans(p) {
+        cy_score += p;
+        if (cy_step < 5) { cy_step++; renderCy(); } else { finishCy(); }
+    }
+
+    function renderCy() {
+        const task = cy_tasks[cy_step];
+        document.getElementById('cy-num').innerText = cy_step + 1;
+        document.getElementById('cy-line').style.width = ((cy_step + 1) / 6 * 100) + "%";
+        document.getElementById('cy-text').innerText = task.q;
+        const zone = document.getElementById('cy-answers-zone');
+        zone.innerHTML = '';
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => cy_ans(opt.p);
+            zone.appendChild(btn);
+        });
+    }
+
+    function finishCy() {
+        document.getElementById('cy-quiz-content').style.display = 'none';
+        const res = document.getElementById('cy-trophy-display');
+        res.style.display = 'block';
+        let t, d;
+        if (cy_score >= 10) { 
+            t = "Кибер-Ниндзя! 🦾"; 
+            d = "Твои данные под надежной защитой. Ты знаешь все уловки мошенников и не даешь им шанса. Так держать!";
+        } else if (cy_score >= 6) { 
+            t = "Осторожный юзер 🛡️"; 
+            d = "Ты молодец, но иногда бываешь слишком доверчивой. Будь внимательнее с подозрительными ссылками!";
+        } else { 
+            t = "Легкая добыча 🚨"; 
+            d = "Ой-ой! Тебе нужно срочно подтянуть знания о безопасности. Твой профиль могут легко взломать. Начни смены паролей прямо сейчас!";
+        }
+        document.getElementById('cy-final-title').innerText = t;
+        document.getElementById('cy-final-desc').innerText = d;
+    }
+    renderCy();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="view-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="view-test-ui" style="background: rgba(255, 234, 219, 0.5) !important; border: 2px solid #ffccaa;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">🌈 Пессимист, Реалист или Оптимист</h2>
+    
+    <div id="view-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Ситуация <span id="v-num">1</span> из 6</div>
+            <div class="line-bg"><div id="v-line" class="line-fill" style="background: #ffccaa;"></div></div>
+        </div>
+
+        <h3 id="v-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="v-answers-zone" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="view-trophy-display" style="display: none;" class="fade-anim">
+        <div id="v-icon" style="font-size: 100px; margin-bottom: 20px;">✨</div>
+        <h2 id="v-final-title">Твой результат</h2>
+        <p id="v-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Назад к тестам</button>
+    </div>
+</div>
+
+<script>
+    // Лифт починен сразу
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Пессимист, Реалист или Оптимист")) {
+            card.onclick = () => document.getElementById('view-test-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let v_step = 0;
+    let v_scores = { opt: 0, real: 0, pess: 0 };
+
+    const v_tasks = [
+        { 
+            q: "Ты купила лотерейный билет ради интереса. О чем ты думаешь, пока стираешь защитный слой?", 
+            a: [
+                {t: "Точно выиграю! Прямо чувствую удачу.", s: "opt"}, 
+                {t: "Да сто процентов там пусто, зря деньги потратила.", s: "pess"}, 
+                {t: "Шанс один на миллион, но вдруг повезет?", s: "real"},
+                {t: "Просто забавный способ убить минуту времени.", s: "real"}
+            ]
+        },
+        { 
+            q: "Учительница сказала, что завтра будет внеплановая проверка. Твоя первая мысль?", 
+            a: [
+                {t: "Ну вот, я так и знала, она специально хочет нас завалить.", s: "pess"}, 
+                {t: "Ничего, повторю самое важное вечером и всё будет ок.", s: "opt"}, 
+                {t: "Так, надо узнать, по каким темам будет опрос.", s: "real"},
+                {t: "Если подготовлю шпаргалку — не пропаду.", s: "opt"}
+            ]
+        },
+        { 
+            q: "Ты выложила новое фото, но за час его никто не лайкнул. Твоя реакция?", 
+            a: [
+                {t: "Фото ужасное, я знала, что не стоит его выкладывать.", s: "pess"}, 
+                {t: "Наверное, сейчас просто все заняты или спят.", s: "opt"}, 
+                {t: "Скорее всего, алгоритмы ленты подвели, выложу позже.", s: "real"},
+                {t: "Ну и ладно, мне самой оно нравится, это главное.", s: "real"}
+            ]
+        },
+        { 
+            q: "Ты идешь на встречу, и вдруг понимаешь, что забыла телефон дома. Как прошел день?", 
+            a: [
+                {t: "Весь день испорчен, я как без рук, это катастрофа.", s: "pess"}, 
+                {t: "Круто! Наконец-то отдохну от уведомлений и посмотрю вокруг.", s: "opt"}, 
+                {t: "Неудобно, но я выкручусь. Найду часы или спрошу время.", s: "real"},
+                {t: "Просто буду внимательнее, чтобы не потеряться.", s: "real"}
+            ]
+        },
+        { 
+            q: "Тебе подарили вещь, которая тебе совсем не нравится. Твои действия?", 
+            a: [
+                {t: "Сделаю вид, что всё супер, чтобы не обидеть человека.", s: "opt"}, 
+                {t: "Подумаю: 'Опять мне дарят какой-то хлам'.", s: "pess"}, 
+                {t: "Поблагодарю и подумаю, можно ли её кому-то передарить.", s: "real"},
+                {t: "Попробую найти в этой вещи хоть один плюс.", s: "opt"}
+            ]
+        },
+        { 
+            q: "В интернете пишут, что через неделю будет сильнейшая магнитная буря.", 
+            a: [
+                {t: "Опять буду лежать с больной головой, сто процентов.", s: "pess"}, 
+                {t: "Буду пить больше воды и лягу пораньше, всё будет норм.", s: "opt"}, 
+                {t: "Обычно эти новости преувеличивают, посмотрим по факту.", s: "real"},
+                {t: "Подготовлю все дела заранее, на всякий случай.", s: "real"}
+            ]
+        }
+    ];
+
+    function v_ans(s) {
+        v_scores[s]++;
+        const content = document.getElementById('view-quiz-content');
+        
+        content.classList.add('hidden-step'); // Плавное исчезновение
+
+        setTimeout(() => {
+            if (v_step < 5) {
+                v_step++;
+                renderView();
+                content.classList.remove('hidden-step'); // Проявление
+            } else {
+                showViewResult();
+            }
+        }, 500);
+    }
+
+    function renderView() {
+        const task = v_tasks[v_step];
+        document.getElementById('v-num').innerText = v_step + 1;
+        document.getElementById('v-line').style.width = ((v_step + 1) / 6 * 100) + "%";
+        document.getElementById('v-text').innerText = task.q;
+        const zone = document.getElementById('v-answers-zone');
+        zone.innerHTML = '';
+        
+        // ПЕРЕМЕШИВАНИЕ (как ты просила)
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => v_ans(opt.s);
+            zone.appendChild(btn);
+        });
+    }
+
+    function showViewResult() {
+        document.getElementById('view-quiz-content').style.display = 'none';
+        const resDiv = document.getElementById('view-trophy-display');
+        resDiv.style.display = 'block';
+        
+        const winner = Object.keys(v_scores).reduce((a, b) => v_scores[a] > v_scores[b] ? a : b);
+        let t, d, icon;
+
+        if (winner === 'opt') {
+            t = "Ты — Светлый Оптимист! ☀️";
+            d = "Ты видишь в жизни приключения и возможности. Даже если что-то идет не так, ты веришь в лучшее. Люди тянутся к твоему свету!";
+            icon = "🌼";
+        } else if (winner === 'pess') {
+            t = "Ты — Осторожный Пессимист ☁️";
+            d = "Ты всегда ждешь подвоха и готовишься к худшему. Это защищает тебя от разочарований, но иногда мешает просто радоваться жизни.";
+            icon = "🌪️";
+        } else {
+            t = "Ты — Четкий Реалист ⚖️";
+            d = "Ты не летаешь в облаках, но и не уходишь в депрессию. Ты решаешь проблемы по мере их поступления. На тебя всегда можно положиться!";
+            icon = "🌿";
+        }
+
+        document.getElementById('v-final-title').innerText = t;
+        document.getElementById('v-final-desc').innerText = d;
+        document.getElementById('v-icon').innerText = icon;
+        resDiv.classList.remove('hidden-step');
+    }
+
+    renderView();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="friends-test-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="friends-test-ui" style="background: rgba(225, 245, 254, 0.4) !important; border: 2px solid #81d4fa;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">👥 Кто ты в компании друзей?</h2>
+    
+    <div id="fr-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Ситуация <span id="fr-num">1</span> из 6</div>
+            <div class="line-bg"><div id="fr-line" class="line-fill" style="background: #03a9f4;"></div></div>
+        </div>
+
+        <h3 id="fr-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="fr-answers-zone" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="fr-trophy-display" style="display: none;" class="fade-anim">
+        <div id="fr-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #03a9f4);">🧶</div>
+        <h2 id="fr-final-title">Твоя роль</h2>
+        <p id="fr-final-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">К списку тестов</button>
+    </div>
+</div>
+
+<script>
+    // Лифт для кнопки "Кто ты в компании друзей"
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Кто ты в компании друзей")) {
+            card.onclick = () => document.getElementById('friends-test-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let fr_step = 0;
+    let fr_scores = { soul: 0, mom: 0, brain: 0, observer: 0 };
+
+    const fr_tasks = [
+        { 
+            q: "Вы решили пойти гулять, но никто не может выбрать место. Что сделаешь?", 
+            a: [
+                {t: "Предложу самое безумное и веселое место!", s: "soul"}, 
+                {t: "Загуглю отзывы и выберу самый логичный вариант.", s: "brain"}, 
+                {t: "Спрошу, все ли взяли воду и зарядили телефоны.", s: "mom"},
+                {t: "Мне всё равно, я пойду за всеми.", s: "observer"}
+            ]
+        },
+        { 
+            q: "У подруги случилась неприятность. Как ты её поддержишь?", 
+            a: [
+                {t: "Пойду и разберусь с тем, кто её обидел!", s: "mom"}, 
+                {t: "Рассмешу её так, что она забудет о грусти.", s: "soul"}, 
+                {t: "Дам дельный совет, как всё исправить.", s: "brain"},
+                {t: "Просто буду рядом и выслушаю.", s: "observer"}
+            ]
+        },
+        { 
+            q: "В компании появилась новая шутка, которую понимаете только вы. Кто её придумал?", 
+            a: [
+                {t: "Скорее всего, я, случайно ляпнув глупость.", s: "soul"}, 
+                {t: "Это была тонкая ирония, которую я вставила в тему.", s: "brain"}, 
+                {t: "Я просто громче всех над ней смеялась.", s: "observer"},
+                {t: "Я пересказываю её всем остальным.", s: "mom"}
+            ]
+        },
+        { 
+            q: "Вы делаете совместное селфи. Где ты на фото?", 
+            a: [
+                {t: "В самом центре, строю смешную рожицу.", s: "soul"}, 
+                {t: "Держу телефон, чтобы все точно влезли в кадр.", s: "mom"}, 
+                {t: "Стою с краю и просто мило улыбаюсь.", s: "observer"},
+                {t: "Проверяю, чтобы свет падал правильно.", s: "brain"}
+            ]
+        },
+        { 
+            q: "Вам нужно разделиться на пары для квеста. С кем ты пойдешь?", 
+            a: [
+                {t: "С тем, кто выглядит самым потерянным, чтобы помочь.", s: "mom"}, 
+                {t: "С самым умным, чтобы мы точно победили.", s: "brain"}, 
+                {t: "С тем, с кем можно будет больше всего поболтать.", s: "soul"},
+                {t: "С кем угодно, кто меня позовет.", s: "observer"}
+            ]
+        },
+        { 
+            q: "Вечер заканчивается, пора расходиться. Твои последние слова?", 
+            a: [
+                {t: "«Напишите все, как доберетесь до дома!»", s: "mom"}, 
+                {t: "«Это было легендарно! Завтра повторяем?»", s: "soul"}, 
+                {t: "«Скиньте все фотки в общую группу».", s: "brain"},
+                {t: "«Пока, всем удачи».", s: "observer"}
+            ]
+        }
+    ];
+
+    function fr_ans(s) {
+        fr_scores[s]++;
+        const content = document.getElementById('fr-quiz-content');
+        content.classList.add('hidden-step');
+
+        setTimeout(() => {
+            if (fr_step < 5) {
+                fr_step++;
+                renderFriends();
+                content.classList.remove('hidden-step');
+            } else {
+                showFriendsResult();
+            }
+        }, 500);
+    }
+
+    function renderFriends() {
+        const task = fr_tasks[fr_step];
+        document.getElementById('fr-num').innerText = fr_step + 1;
+        document.getElementById('fr-line').style.width = ((fr_step + 1) / 6 * 100) + "%";
+        document.getElementById('fr-text').innerText = task.q;
+        const zone = document.getElementById('fr-answers-zone');
+        zone.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => fr_ans(opt.s);
+            zone.appendChild(btn);
+        });
+    }
+
+    function showFriendsResult() {
+        document.getElementById('fr-quiz-content').style.display = 'none';
+        const resDiv = document.getElementById('fr-trophy-display');
+        resDiv.style.display = 'block';
+        
+        const winner = Object.keys(fr_scores).reduce((a, b) => fr_scores[a] > fr_scores[b] ? a : b);
+        let t, d;
+
+        if (winner === 'soul') {
+            t = "Душа компании! ✨";
+            d = "Без тебя любая встреча — просто посиделки. Ты приносишь смех, идеи и энергию. Все знают: если ты пришла, скучно не будет!";
+        } else if (winner === 'mom') {
+            t = "«Мамочка» группы 🤱";
+            d = "Ты та самая заботливая подруга, у которой в сумке всегда есть пластырь, вода и зарядка. Ты следишь, чтобы все были сыты и в безопасности.";
+        } else if (winner === 'brain') {
+            t = "Мозг команды 🧠";
+            d = "Ты ходячая энциклопедия и стратег. Если нужно что-то решить, забронировать или спланировать — все идут к тебе. Ты голос разума!";
+        } else {
+            t = "Тихий наблюдатель 🕊️";
+            d = "Тебе не нужно много говорить, чтобы быть важной частью компании. Ты отличный слушатель, который замечает всё, что пропускают другие.";
+        }
+
+        document.getElementById('fr-final-title').innerText = t;
+        document.getElementById('fr-final-desc').innerText = d;
+        resDiv.classList.remove('hidden-step');
+    }
+
+    renderFriends();
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="era-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="era-ui" style="background: rgba(255, 234, 219, 0.4) !important; border: 2px solid #ffccaa;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">🕰️ Эпоха, в которой ты должна жить</h2>
+    
+    <div id="era-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Твоё предпочтение <span id="era-step-num">1</span> из 6</div>
+            <div class="line-bg"><div id="era-progress-bar" class="line-fill" style="background: #ffccaa;"></div></div>
+        </div>
+
+        <h3 id="era-question-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="era-answers-grid" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="era-result-box" style="display: none;" class="fade-anim">
+        <div id="era-trophy-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #ffccaa);">🏺</div>
+        <h2 id="era-result-title">Твоё время</h2>
+        <p id="era-result-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Назад к тестам</button>
+    </div>
+</div>
+
+<script>
+    // Лифт
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Эпоха для жизни") || card.innerText.includes("Эпоха, в которой ты должен жить")) {
+            card.onclick = () => document.getElementById('era-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let currentEraStep = 0;
+    let eraScores = { past: 0, retro: 0, present: 0, future: 0 };
+
+    const eraTasks = [
+        { 
+            q: "Какой звук кажется тебе самым приятным и успокаивающим?", 
+            a: [
+                {t: "Шелест пышных платьев и стук копыт.", s: "past"}, 
+                {t: "Шипение виниловой пластинки.", s: "retro"}, 
+                {t: "Уведомление в телефоне.", s: "present"},
+                {t: "Тихое гудение лазерных двигателей.", s: "future"}
+            ]
+        },
+        { 
+            q: "Если бы ты могла выбрать приглашение, куда бы ты отправилась?", 
+            a: [
+                {t: "На бал-маскарад в огромном замке.", s: "past"}, 
+                {t: "На дискотеку с ярким неоном.", s: "retro"}, 
+                {t: "На крутую современную вечеринку.", s: "present"},
+                {t: "На встречу рассвета на другой планете.", s: "future"}
+            ]
+        },
+        { 
+            q: "Как бы ты хотела записывать свои сокровенные мысли?", 
+            a: [
+                {t: "Пером на старинном свитке.", s: "past"}, 
+                {t: "На печатной машинке.", s: "retro"}, 
+                {t: "В заметках телефона.", s: "present"},
+                {t: "Голосовой командой в нейросеть.", s: "future"}
+            ]
+        },
+        { 
+            q: "Твой идеальный наряд для прогулки?", 
+            a: [
+                {t: "Корсет и длинная юбка.", s: "past"}, 
+                {t: "Расклешенные джинсы и повязка.", s: "retro"}, 
+                {t: "Оверсайз-худи и кроссовки.", s: "present"},
+                {t: "Серебристый комбинезон.", s: "future"}
+            ]
+        },
+        { 
+            q: "Какую тайну ты бы хотела разгадать?", 
+            a: [
+                {t: "Тайну забытых королей.", s: "past"}, 
+                {t: "Загадку рок-звезд прошлого.", s: "retro"}, 
+                {t: "Секреты алгоритмов сетей.", s: "present"},
+                {t: "Есть ли жизнь в других галактиках.", s: "future"}
+            ]
+        },
+        { 
+            q: "Где бы ты хотела поужинать вечером?", 
+            a: [
+                {t: "За дубовым столом у камина.", s: "past"}, 
+                {t: "В ярком кафе с молочными коктейлями.", s: "retro"}, 
+                {t: "В суши-баре с видом на город.", s: "present"},
+                {t: "В капсуле с видом на астероиды.", s: "future"}
+            ]
+        }
+    ];
+
+    function handleEraClick(choice) {
+        eraScores[choice]++;
+        const content = document.getElementById('era-quiz-content');
+        content.classList.add('hidden-step');
+
+        setTimeout(() => {
+            if (currentEraStep < 5) {
+                currentEraStep++;
+                renderEraTest();
+                content.classList.remove('hidden-step');
+            } else {
+                showEraFinalResult();
+            }
+        }, 500);
+    }
+
+    function renderEraTest() {
+        const task = eraTasks[currentEraStep];
+        document.getElementById('era-step-num').innerText = currentEraStep + 1;
+        document.getElementById('era-progress-bar').style.width = ((currentEraStep + 1) / 6 * 100) + "%";
+        document.getElementById('era-question-text').innerText = task.q;
+        const grid = document.getElementById('era-answers-grid');
+        grid.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleEraClick(opt.s);
+            grid.appendChild(btn);
+        });
+    }
+
+    function showEraFinalResult() {
+        document.getElementById('era-quiz-content').style.display = 'none';
+        const resBox = document.getElementById('era-result-box');
+        resBox.style.display = 'block';
+        
+        const winner = Object.keys(eraScores).reduce((a, b) => eraScores[a] > eraScores[b] ? a : b);
+        let title, desc;
+
+        if (winner === 'past') {
+            title = "Эпоха Прекрасных Дам 🏰";
+            desc = "Твоя душа стремится к временам балов и рыцарства. Тебе важны честь и изящество.";
+        } else if (winner === 'retro') {
+            title = "Дерзкое Ретро 📺";
+            desc = "Твой стиль — яркие 80-е и 90-е! Ты полна ностальгии по драйву и кассетам.";
+        } else if (winner === 'present') {
+            title = "Героиня Нашего Времени 📱";
+            desc = "Ты идеально вписываешься в современный мир. Соцсети и технологии — твоя стихия.";
+        } else {
+            title = "Гостья из Будущего 🚀";
+            desc = "Тебе тесно в нынешних рамках. Ты мечтаешь о звездах и невероятных открытиях.";
+        }
+
+        document.getElementById('era-result-title').innerText = title;
+        document.getElementById('era-result-desc').innerText = desc;
+        resBox.classList.remove('hidden-step');
+    }
+
+    renderEraTest();
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">🌸</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="flower-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="flower-ui" style="background: rgba(255, 240, 245, 0.5) !important; border: 2px solid #ffb7a1;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">🌸 Твой тотемный цветок</h2>
+    
+    <div id="flower-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Твой выбор <span id="flower-step-num">1</span> из 8</div>
+            <div class="line-bg"><div id="flower-progress-bar" class="line-fill" style="background: #ffb7a1;"></div></div>
+        </div>
+
+        <h3 id="flower-question-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="flower-answers-grid" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="flower-result-box" style="display: none;" class="fade-anim">
+        <div id="flower-trophy-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #ffb7a1);">💧</div>
+        <h2 id="flower-result-title">Твой цветок</h2>
+        <p id="flower-result-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Назад к списку</button>
+    </div>
+</div>
+
+<script>
+    // Лифт для карточки цветка
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Твой тотемный цветок")) {
+            card.onclick = () => document.getElementById('flower-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let currentFlowerStep = 0;
+    let flowerScores = { rose: 0, daisy: 0, lily: 0, cactus: 0 };
+
+    const flowerTasks = [
+        { 
+            q: "Какой первый ветерок ты хочешь почувствовать?", 
+            a: [
+                {t: "Сладкий и густой, как вечерний сад.", s: "rose"}, 
+                {t: "Свежий и холодный, как утренняя роса.", s: "lily"}, 
+                {t: "Простой и травяной, как летнее поле.", s: "daisy"},
+                {t: "Сухой и горячий, как песок в пустыне.", s: "cactus"}
+            ]
+        },
+        { 
+            q: "Как ты ведешь себя, если кто-то пытается тебя задеть?", 
+            a: [
+                {t: "Сразу выпускаю шипы и даю жесткий отпор.", s: "rose"}, 
+                {t: "Просто игнорирую, это меня не касается.", s: "cactus"}, 
+                {t: "Пытаюсь перевести всё в добрую шутку.", s: "daisy"},
+                {t: "Замыкаюсь и анализирую, почему так вышло.", s: "lily"}
+            ]
+        },
+        { 
+            q: "Твоё идеальное утро начинается с...", 
+            a: [
+                {t: "Яркого солнца и шума большого города.", s: "rose"}, 
+                {t: "Тишины и чашки чая у окна.", s: "cactus"}, 
+                {t: "Прогулки босиком по мягкой траве.", s: "daisy"},
+                {t: "Классической музыки и чтения книги.", s: "lily"}
+            ]
+        },
+        { 
+            q: "Какой аромат тебе ближе всего?", 
+            a: [
+                {t: "Тяжелый аромат дорогих духов.", s: "rose"}, 
+                {t: "Запах свежескошенного сена.", s: "daisy"}, 
+                {t: "Едва уловимый запах лесного тумана.", s: "lily"},
+                {t: "Запах пыли после летнего дождя.", s: "cactus"}
+            ]
+        },
+        { 
+            q: "Твой выбор в творчестве?", 
+            a: [
+                {t: "Яркие масляные краски и огромный холст.", s: "rose"}, 
+                {t: "Тонкий карандашный набросок.", s: "lily"}, 
+                {t: "Плетение венков из простых цветов.", s: "daisy"},
+                {t: "Создание чего-то прочного из глины.", s: "cactus"}
+            ]
+        },
+        { 
+            q: "Что ты чувствуешь, когда остаешься одна?", 
+            a: [
+                {t: "Скуку, мне всегда нужны зрители.", s: "rose"}, 
+                {t: "Облегчение, я люблю своё пространство.", s: "cactus"}, 
+                {t: "Свободу и легкость.", s: "daisy"},
+                {t: "Глубокое погружение в свои мысли.", s: "lily"}
+            ]
+        },
+        { 
+            q: "Твоё отношение к переменам?", 
+            a: [
+                {t: "Обожаю! Перемены — это жизнь.", s: "rose"}, 
+                {t: "Принимаю их спокойно, если они логичны.", s: "lily"}, 
+                {t: "Немного пугают, но я быстро привыкаю.", s: "daisy"},
+                {t: "Я сама решаю, когда им случаться.", s: "cactus"}
+            ]
+        },
+        { 
+            q: "Как ты хочешь, чтобы тебя запомнили?", 
+            a: [
+                {t: "Как самую яркую и незабываемую.", s: "rose"}, 
+                {t: "Как нежную и очень добрую.", s: "daisy"}, 
+                {t: "Как мудрую и загадочную.", s: "lily"},
+                {t: "Как сильную и независимую.", s: "cactus"}
+            ]
+        }
+    ];
+
+    function handleFlowerClick(choice) {
+        flowerScores[choice]++;
+        const content = document.getElementById('flower-quiz-content');
+        content.classList.add('hidden-step');
+
+        setTimeout(() => {
+            if (currentFlowerStep < 7) {
+                currentFlowerStep++;
+                renderFlowerTest();
+                content.classList.remove('hidden-step');
+            } else {
+                showFlowerFinalResult();
+            }
+        }, 500);
+    }
+
+    function renderFlowerTest() {
+        const task = flowerTasks[currentFlowerStep];
+        document.getElementById('flower-step-num').innerText = currentFlowerStep + 1;
+        document.getElementById('flower-progress-bar').style.width = ((currentFlowerStep + 1) / 8 * 100) + "%";
+        document.getElementById('flower-question-text').innerText = task.q;
+        const grid = document.getElementById('flower-answers-grid');
+        grid.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleFlowerClick(opt.s);
+            grid.appendChild(btn);
+        });
+    }
+
+    function showFlowerFinalResult() {
+        document.getElementById('flower-quiz-content').style.display = 'none';
+        const resBox = document.getElementById('flower-result-box');
+        resBox.style.display = 'block';
+        
+        const winner = Object.keys(flowerScores).reduce((a, b) => flowerScores[a] > flowerScores[b] ? a : b);
+        let title, desc;
+
+        if (winner === 'rose') {
+            title = "Королевская Роза 🌹";
+            desc = "Ты — центр внимания! Твоя красота ослепляет, но шипы напоминают о твоей силе и гордости.";
+        } else if (winner === 'daisy') {
+            title = "Солнечная Ромашка 🌼";
+            desc = "Ты — само тепло и искренность. Ты несешь радость и уют везде, где появляешься.";
+        } else if (winner === 'lily') {
+            title = "Мистическая Лилия 🪷";
+            desc = "Ты — загадка этого мира. Твоя утонченность и глубина делают тебя по-настоящему особенной.";
+        } else {
+            title = "Неприступный Кактус 🌵";
+            desc = "Ты ценишь свои границы и обладаешь невероятной внутренней силой. Тебе не нужны лишние слова, чтобы быть крутой.";
+        }
+
+        document.getElementById('flower-result-title').innerText = title;
+        document.getElementById('flower-result-desc').innerText = desc;
+        resBox.classList.remove('hidden-step');
+    }
+
+    renderFlowerTest();
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">🐾</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="animal-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="animal-ui" style="background: rgba(240, 255, 240, 0.5) !important; border: 2px solid #a8e6cf;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">🐾 Твое тотемное животное</h2>
+    
+    <div id="animal-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Твой инстинкт <span id="animal-step-num">1</span> из 8</div>
+            <div class="line-bg"><div id="animal-progress-bar" class="line-fill" style="background: #a8e6cf;"></div></div>
+        </div>
+
+        <h3 id="animal-question-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="animal-answers-grid" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="animal-result-box" style="display: none;" class="fade-anim">
+        <div id="animal-trophy-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #a8e6cf);">🐾</div>
+        <h2 id="animal-result-title">Твой тотем</h2>
+        <p id="animal-result-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Назад к списку</button>
+    </div>
+</div>
+
+<script>
+    // Лифт для карточки
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Твое тотемное животное")) {
+            card.onclick = () => document.getElementById('animal-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let currentAnimalStep = 0;
+    let animalScores = { wolf: 0, cat: 0, owl: 0, fox: 0 };
+
+    const animalTasks = [
+        { 
+            q: "Какое время суток дает тебе больше силы?", 
+            a: [
+                {t: "Глубокая ночь, когда все спят.", s: "owl"}, 
+                {t: "Сумерки, когда всё становится загадочным.", s: "wolf"}, 
+                {t: "Ленивый полдень под лучами солнца.", s: "cat"},
+                {t: "Раннее утро, когда мир только просыпается.", s: "fox"}
+            ]
+        },
+        { 
+            q: "Как ты ведешь себя в новой, незнакомой компании?", 
+            a: [
+                {t: "Держусь в стороне и наблюдаю за всеми.", s: "owl"}, 
+                {t: "Пытаюсь со всеми подружиться и обаять.", s: "fox"}, 
+                {t: "Ищу лидера или того, кто мне симпатичен.", s: "wolf"},
+                {t: "Жду, пока ко мне подойдут сами.", s: "cat"}
+            ]
+        },
+        { 
+            q: "Твой идеальный способ добыть желаемое?", 
+            a: [
+                {t: "Действовать прямо и решительно.", s: "wolf"}, 
+                {t: "Придумать хитрый план и перехитрить всех.", s: "fox"}, 
+                {t: "Дождаться идеального момента и забрать своё.", s: "owl"},
+                {t: "Просто попросить так мило, что мне не откажут.", s: "cat"}
+            ]
+        },
+        { 
+            q: "Что ты чувствуешь, когда остаешься одна в лесу?", 
+            a: [
+                {t: "Азарт и желание исследовать каждый куст.", s: "fox"}, 
+                {t: "Спокойствие и единение с природой.", s: "owl"}, 
+                {t: "Тревогу, но я готова защищаться.", s: "wolf"},
+                {t: "Мне всё равно, я найду уютное место для отдыха.", s: "cat"}
+            ]
+        },
+        { 
+            q: "Твое отношение к правилам?", 
+            a: [
+                {t: "Правила нужны для порядка в стае.", s: "wolf"}, 
+                {t: "Правила созданы, чтобы их обходить.", s: "fox"}, 
+                {t: "Я сама создаю свои правила.", s: "cat"},
+                {t: "Я выше этих земных правил.", s: "owl"}
+            ]
+        },
+        { 
+            q: "Какая стихия тебе ближе по духу?", 
+            a: [
+                {t: "Холодный пронзительный ветер.", s: "owl"}, 
+                {t: "Пылающий лесной костер.", s: "fox"}, 
+                {t: "Сырая земля под лапами.", s: "wolf"},
+                {t: "Мягкий туман над рекой.", s: "cat"}
+            ]
+        },
+        { 
+            q: "Что ты сделаешь, если увидишь что-то очень странное?", 
+            a: [
+                {t: "Изучу это со всех сторон, пока не пойму суть.", s: "owl"}, 
+                {t: "Попробую использовать это в своих целях.", s: "fox"}, 
+                {t: "Позову друзей, чтобы разобраться вместе.", s: "wolf"},
+                {t: "Понюхаю и, если не интересно, пойду дальше.", s: "cat"}
+            ]
+        },
+        { 
+            q: "Твой девиз по жизни?", 
+            a: [
+                {t: "Один за всех и все за одного!", s: "wolf"}, 
+                {t: "Мир — это большая игра, и я в ней профи.", s: "fox"}, 
+                {t: "Знание — это истинная сила.", s: "owl"},
+                {t: "Я — центр своей вселенной.", s: "cat"}
+            ]
+        }
+    ];
+
+    function handleAnimalClick(choice) {
+        animalScores[choice]++;
+        const content = document.getElementById('animal-quiz-content');
+        content.classList.add('hidden-step');
+
+        setTimeout(() => {
+            if (currentAnimalStep < 7) {
+                currentAnimalStep++;
+                renderAnimalTest();
+                content.classList.remove('hidden-step');
+            } else {
+                showAnimalFinalResult();
+            }
+        }, 500);
+    }
+
+    function renderAnimalTest() {
+        const task = animalTasks[currentAnimalStep];
+        document.getElementById('animal-step-num').innerText = currentAnimalStep + 1;
+        document.getElementById('animal-progress-bar').style.width = ((currentAnimalStep + 1) / 8 * 100) + "%";
+        document.getElementById('animal-question-text').innerText = task.q;
+        const grid = document.getElementById('animal-answers-grid');
+        grid.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleAnimalClick(opt.s);
+            grid.appendChild(btn);
+        });
+    }
+
+    function showAnimalFinalResult() {
+        document.getElementById('animal-quiz-content').style.display = 'none';
+        const resBox = document.getElementById('animal-result-box');
+        resBox.style.display = 'block';
+        
+        const winner = Object.keys(animalScores).reduce((a, b) => animalScores[a] > animalScores[b] ? a : b);
+        let title, desc;
+
+        if (winner === 'wolf') {
+            title = "Одинокий Волк 🐺";
+            desc = "Ты верный друг и сильная личность. Твоя сила в преданности своим принципам и умении защищать то, что тебе дорого.";
+        } else if (winner === 'cat') {
+            title = "Гордая Кошка 🐈";
+            desc = "Ты независимая, грациозная и любишь комфорт. Тебя невозможно заставить делать то, что тебе не нравится.";
+        } else if (winner === 'owl') {
+            title = "Мудрая Сова 🦉";
+            desc = "Ты видишь то, что скрыто от глаз других. Твой интеллект и интуиция — твои главные помощники в жизни.";
+        } else {
+            title = "Хитрая Лиса 🦊";
+            desc = "Ты мастер общения и поиска путей. Твой ум и обаяние позволяют тебе выходить сухой из воды в любой ситуации!";
+        }
+
+        document.getElementById('animal-result-title').innerText = title;
+        document.getElementById('animal-result-desc').innerText = desc;
+        resBox.classList.remove('hidden-step');
+    }
+
+    renderAnimalTest();
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks">
+    <div class="spark-line"></div>
+    <div class="spark-star">✨</div>
+    <div class="spark-line"></div>
+</div>
+
+<div id="hobby-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="hobby-ui" style="background: rgba(225, 245, 254, 0.4) !important; border: 2px solid #ffccaa;">
+    <div class="category-tag">Раздел: Личное и Эстетика</div>
+    <h2 style="font-size: 2.2rem;">🎨 Твое тайное хобби</h2>
+    
+    <div id="hobby-quiz-content" class="fade-anim">
+        <div class="progress-wrapper">
+            <div class="progress-text">Твой интерес <span id="hobby-step-num">1</span> из 8</div>
+            <div class="line-bg"><div id="hobby-progress-bar" class="line-fill" style="background: #ffccaa;"></div></div>
+        </div>
+
+        <h3 id="hobby-question-text" style="min-height: 80px; margin-bottom: 20px;">Загрузка...</h3>
+        <div id="hobby-answers-grid" class="answer-options" style="display: grid; gap: 10px;"></div>
+    </div>
+
+    <div id="hobby-result-box" style="display: none;" class="fade-anim">
+        <div id="hobby-trophy-icon" style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 15px #ffccaa);">🖌️</div>
+        <h2 id="hobby-result-title">Твое хобби</h2>
+        <p id="hobby-result-desc" style="font-size: 1.2rem; max-width: 600px; margin: 20px auto; color: #444; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn">Назад к списку</button>
+    </div>
+</div>
+
+<script>
+    // Лифт для карточки
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Твое тайное хобби")) {
+            card.onclick = () => document.getElementById('hobby-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    let currentHobbyStep = 0;
+    let hobbyScores = { digital: 0, craft: 0, active: 0, relax: 0 };
+
+    const hobbyTasks = [
+        { 
+            q: "Если бы у тебя был свободный час, на что бы ты его потратила?", 
+            a: [
+                {t: "Попробовала бы создать что-то на планшете или ПК.", s: "digital"}, 
+                {t: "Сделала бы что-то красивое своими руками.", s: "craft"}, 
+                {t: "Пошла бы танцевать или просто гулять.", s: "active"},
+                {t: "Послушала бы музыку или почитала в тишине.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Какой материал тебе приятнее всего держать в руках?", 
+            a: [
+                {t: "Гладкий экран смартфона или стилус.", s: "digital"}, 
+                {t: "Теплую глину, нитки или бумагу.", s: "craft"}, 
+                {t: "Мягкую траву под ногами или кроссовки.", s: "active"},
+                {t: "Страницы старой книги.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Что тебя больше всего радует в конце дела?", 
+            a: [
+                {t: "Крутой результат, который можно выложить в сеть.", s: "digital"}, 
+                {t: "Вещь, которую можно потрогать и поставить на полку.", s: "craft"}, 
+                {t: "Чувство бодрости и усталости в теле.", s: "active"},
+                {t: "Спокойствие в мыслях.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Твой идеальный рабочий уголок?", 
+            a: [
+                {t: "Мощный комп с двумя мониторами и неоном.", s: "digital"}, 
+                {t: "Стол, заваленный красками и блестками.", s: "craft"}, 
+                {t: "Открытая площадка или парк.", s: "active"},
+                {t: "Уютное кресло с пледом.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Какую суперспособность ты бы выбрала для хобби?", 
+            a: [
+                {t: "Мгновенная загрузка знаний в мозг.", s: "digital"}, 
+                {t: "Умение оживлять неодушевленные предметы.", s: "craft"}, 
+                {t: "Бесконечная энергия и выносливость.", s: "active"},
+                {t: "Способность останавливать время.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Твой выбор в магазине товаров для творчества?", 
+            a: [
+                {t: "Новые насадки для стилуса или софт.", s: "digital"}, 
+                {t: "Набор для создания украшений или лепки.", s: "craft"}, 
+                {t: "Стильная спортивная форма.", s: "active"},
+                {t: "Ароматические свечи и блокноты.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Какое видео ты бы посмотрела на YouTube?", 
+            a: [
+                {t: "Туториал по 3D-моделированию или коду.", s: "digital"}, 
+                {t: "Мастер-класс по декору комнаты (DIY).", s: "craft"}, 
+                {t: "Влог из путешествия или тренировка.", s: "active"},
+                {t: "Видео с эстетикой чтения или медитации.", s: "relax"}
+            ]
+        },
+        { 
+            q: "Что тебе важнее всего в увлечении?", 
+            a: [
+                {t: "Современность и технологии.", s: "digital"}, 
+                {t: "Уникальность и ручная работа.", s: "craft"}, 
+                {t: "Движение и свобода.", s: "active"},
+                {t: "Тишина и самовыражение.", s: "relax"}
+            ]
+        }
+    ];
+
+    function handleHobbyClick(choice) {
+        hobbyScores[choice]++;
+        const content = document.getElementById('hobby-quiz-content');
+        content.classList.add('hidden-step');
+
+        setTimeout(() => {
+            if (currentHobbyStep < 7) {
+                currentHobbyStep++;
+                renderHobbyTest();
+                content.classList.remove('hidden-step');
+            } else {
+                showHobbyFinalResult();
+            }
+        }, 500);
+    }
+
+    function renderHobbyTest() {
+        const task = hobbyTasks[currentHobbyStep];
+        document.getElementById('hobby-step-num').innerText = currentHobbyStep + 1;
+        document.getElementById('hobby-progress-bar').style.width = ((currentHobbyStep + 1) / 8 * 100) + "%";
+        document.getElementById('hobby-question-text').innerText = task.q;
+        const grid = document.getElementById('hobby-answers-grid');
+        grid.innerHTML = '';
+        
+        const shuffled = [...task.a].sort(() => Math.random() - 0.5);
+        shuffled.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'ans-btn';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleHobbyClick(opt.s);
+            grid.appendChild(btn);
+        });
+    }
+
+    function showHobbyFinalResult() {
+        document.getElementById('hobby-quiz-content').style.display = 'none';
+        const resBox = document.getElementById('hobby-result-box');
+        resBox.style.display = 'block';
+        
+        const winner = Object.keys(hobbyScores).reduce((a, b) => hobbyScores[a] > hobbyScores[b] ? a : b);
+        let title, desc;
+
+        if (winner === 'digital') {
+            title = "Digital-мастер 💻";
+            desc = "Тебе идеально подходит создание сайтов, 3D-моделирование или цифровое рисование. Твой мозг обожает технологии!";
+        } else if (winner === 'craft') {
+            title = "Крафт-дизайнер 🧵";
+            desc = "Твое призвание — создавать физические вещи. Лепка, создание бижутерии или кастом одежды — это то, где ты по-настоящему раскроешься.";
+        } else if (winner === 'active') {
+            title = "Энергичный Искатель 🛹";
+            desc = "Тебе нужно движение! Скейтбординг, современные танцы или экстремальный туризм — это твой способ чувствовать жизнь.";
+        } else {
+            title = "Эстетичный Мыслитель ☕";
+            desc = "Твое хобби — это ведение красивого блога, чтение редких книг или коллекционирование винила. Твой стиль — уют и глубина.";
+        }
+
+        document.getElementById('hobby-result-title').innerText = title;
+        document.getElementById('hobby-result-desc').innerText = desc;
+        resBox.classList.remove('hidden-step');
+    }
+
+    renderHobbyTest();
+</script>
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks"><div class="spark-line"></div><div class="spark-star">✨</div><div class="spark-line"></div></div>
+
+<div id="city-anchor" style="padding-top: 60px;"></div>
+<div class="test-section" id="city-ui" style="transition: all 1s ease; min-height: 650px; position: relative; overflow: hidden; border: 3px solid #fff; border-radius: 40px;">
+    <div class="category-tag" style="background: rgba(255,255,255,0.5);">Финал: Магия Твоего Выбора</div>
+    <h2 id="city-main-title" style="color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">🌃 Ночной Город</h2>
+    
+    <div id="city-content" class="fade-anim">
+        <p id="city-text" style="font-size: 1.2rem; line-height: 1.6; margin: 25px 0; background: rgba(255,255,255,0.2); padding: 25px; border-radius: 25px; backdrop-filter: blur(15px); color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></p>
+        <div id="city-buttons" class="answer-options" style="display: grid; gap: 12px; grid-template-columns: 1fr 1fr;"></div>
+    </div>
+
+    <div id="city-final" style="display: none; color: #fff;" class="fade-anim">
+        <div style="font-size: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 20px #fff);">✈️</div>
+        <h2 id="final-status" style="font-size: 2.5rem;"></h2>
+        <p id="final-story" style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.6;"></p>
+        <button onclick="location.reload()" class="ans-btn" style="margin-top: 30px; background: #fff; color: #333; grid-column: span 2;">Начать заново</button>
+    </div>
+</div>
+
+<script>
+    const cityBox = document.getElementById('city-ui');
+    const cityTxt = document.getElementById('city-text');
+    const cityBtns = document.getElementById('city-buttons');
+
+    const adventure = {
+        start: {
+            text: "Шаг 1: Ты на площади с золотым билетом. Куда поманило сердце?",
+            bg: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            options: [
+                { t: "В 'Кафе книг' ☕", next: "cafe_2" },
+                { t: "В 'Магазин сладостей' 🍭", next: "candy_2" }
+            ]
+        },
+        // --- ВЕТКА КАФЕ ---
+        cafe_2: {
+            text: "Шаг 2: В кафе сидит Человек в маске. Он читает твою книгу судьбы. Что сделаешь?",
+            bg: "#2c3e50",
+            options: [
+                { t: "Попросить его прочесть вслух", next: "cafe_3_read" },
+                { t: "Попробовать выхватить книгу", next: "cafe_3_grab" }
+            ]
+        },
+        cafe_3_read: {
+            text: "Шаг 3: Он читает о твоей мечте. Голос звучит как музыка. Хочешь услышать продолжение?",
+            bg: "#1e3c72",
+            options: [
+                { t: "Да, читай дальше", next: "cafe_4_magic" },
+                { t: "Нет, я сама хочу дописать её", next: "cafe_4_pen" }
+            ]
+        },
+        cafe_3_grab: {
+            text: "Шаг 3: Книга превратилась в стаю бабочек! Одна села тебе на плечо. Что сделаешь?",
+            bg: "#2a5298",
+            options: [
+                { t: "Прошептать ей секрет", next: "cafe_4_magic" },
+                { t: "Попробовать поймать её", next: "cafe_4_pen" }
+            ]
+        },
+        cafe_4_magic: {
+            text: "Шаг 4: Воздух заискрился. Ты видишь портал в стене. Рискнёшь войти?",
+            bg: "#4b6cb7",
+            options: [
+                { t: "Смело шагнуть в свет", next: "cafe_5_portal" },
+                { t: "Сначала заглянуть внутрь", next: "cafe_5_look" }
+            ]
+        },
+        cafe_4_pen: {
+            text: "Шаг 4: Перед тобой появилось золотое перо. Что напишешь на чистой странице?",
+            bg: "#182848",
+            options: [
+                { t: "Написать о большой любви", next: "cafe_5_portal" },
+                { t: "Написать о великом успехе", next: "cafe_5_look" }
+            ]
+        },
+        cafe_5_portal: {
+            text: "Шаг 5: Ты в саду грёз. Здесь растёт Дерево Истины. Какой плод сорвёшь?",
+            bg: "#00b09b",
+            options: [
+                { t: "Золотое яблоко (Сила)", next: "cafe_6_final" },
+                { t: "Серебряную ягоду (Ум)", next: "cafe_6_final" }
+            ]
+        },
+        cafe_5_look: {
+            text: "Шаг 5: В зеркале портала ты видишь себя, но взрослую и счастливую. Что спросишь у неё?",
+            bg: "#96c93d",
+            options: [
+                { t: "'Я на правильном пути?'", next: "cafe_6_final" },
+                { t: "'В чем мой главный секрет?'", next: "cafe_6_final" }
+            ]
+        },
+        cafe_6_final: {
+            text: "Шаг 6: Всё вокруг затихает. Ты чувствуешь, что приключение близится к финалу. Готова?",
+            bg: "#1a1a2e",
+            options: [
+                { t: "Узнать своё имя в этом городе", next: "cafe_end" },
+                { t: "Забрать свой последний трофей", next: "cafe_end" }
+            ]
+        },
+        // --- ВЕТКА СЛАДОСТЕЙ ---
+        candy_2: {
+            text: "Шаг 2: Продавец-робот предлагает конфету: одну для полёта, другую для чтения мыслей. Твой выбор?",
+            bg: "#ff9a9e",
+            options: [
+                { t: "Конфета Полёта 🕊️", next: "candy_3_fly" },
+                { t: "Конфета Мыслей 🧠", next: "candy_3_think" }
+            ]
+        },
+        candy_3_fly: {
+            text: "Шаг 3: Ты паришь над прилавками! Вверху висит секретный ключ. Достать его?",
+            bg: "#fecfef",
+            options: [
+                { t: "Рвануть вверх за ключом", next: "candy_4_key" },
+                { t: "Спуститься и посмотреть склад", next: "candy_4_store" }
+            ]
+        },
+        candy_3_think: {
+            text: "Шаг 3: Ты слышишь мысли города! Статуя на углу просит о помощи. Поможешь?",
+            bg: "#ffdde1",
+            options: [
+                { t: "Расспросить статую о тайне", next: "candy_4_key" },
+                { t: "Поискать инструмент для ремонта", next: "candy_4_store" }
+            ]
+        },
+        candy_4_key: {
+            text: "Шаг 4: Ты нашла дверь в Хранилище Радости! Но она заперта на загадку. Решишь?",
+            bg: "#ee9ca7",
+            options: [
+                { t: "Сказать пароль: 'Улыбка'", next: "candy_5_joy" },
+                { t: "Сказать пароль: 'Дружба'", next: "candy_5_joy" }
+            ]
+        },
+        candy_4_store: {
+            text: "Шаг 4: В подвале делают облака из сахара. Хочешь запустить своё собственное облако?",
+            bg: "#ffafbd",
+            options: [
+                { t: "Запустить розовое облако", next: "candy_5_joy" },
+                { t: "Запустить синее облако", next: "candy_5_joy" }
+            ]
+        },
+        candy_5_joy: {
+            text: "Шаг 5: Весь город заполнился смехом! Тебе предлагают стать Мэром Сладостей. Согласна?",
+            bg: "#f093fb",
+            options: [
+                { t: "Да, это работа мечты!", next: "candy_6_final" },
+                { t: "Нет, я хочу быть свободной", next: "candy_6_final" }
+            ]
+        },
+        candy_6_final: {
+            text: "Шаг 6: Магия конфет начинает угасать, оставляя в сердце тепло. Пора получить награду?",
+            bg: "#4a0e4e",
+            options: [
+                { t: "Открыть золотую обёртку", next: "candy_end" },
+                { t: "Прыгнуть в фонтан из газировки", next: "candy_end" }
+            ]
+        },
+        // ФИНАЛЫ
+        cafe_end: { title: "Хранительница Тайн 🕯️", desc: "Ты прошла путь через Кафе Книг и обрела мудрость предков. Теперь ты сама пишешь свою историю.", bg: "#1a1a2e" },
+        candy_end: { title: "Творец Эмоций 🍭", desc: "Магазин Сладостей открыл в тебе дар делать людей счастливыми. Твоя жизнь будет яркой и сладкой!", bg: "#4a0e4e" }
+    };
+
+    function runScene(step) {
+        const data = adventure[step];
+        if(!data) return;
+        cityBox.style.background = data.bg;
+
+        if (step.includes('_end')) {
+            document.getElementById('city-content').style.display = 'none';
+            const fin = document.getElementById('city-final');
+            fin.style.display = 'block';
+            document.getElementById('final-status').innerText = data.title;
+            document.getElementById('final-story').innerText = data.desc;
+        } else {
+            cityTxt.innerText = data.text;
+            cityBtns.innerHTML = '';
+            data.options.forEach(o => {
+                const b = document.createElement('button');
+                b.className = 'ans-btn';
+                b.style.background = "rgba(255,255,255,0.8)";
+                b.innerText = o.t;
+                b.onclick = () => {
+                    document.getElementById('city-content').classList.add('hidden-step');
+                    setTimeout(() => {
+                        runScene(o.next);
+                        document.getElementById('city-content').classList.remove('hidden-step');
+                    }, 500);
+                };
+                cityBtns.appendChild(b);
+            });
+        }
+    }
+    runScene('start');
+
+    document.querySelectorAll('.test-card').forEach(card => {
+    if (card.innerText.includes("Интерактивная сценка") || card.innerText.includes("Город")) {
+        card.onclick = () => document.getElementById('city-anchor').scrollIntoView({behavior: 'smooth'});
+    }
+});
+
+</script>
+
+
+<!-- Разделитель-искры -->
+<div class="divider-sparks"><div class="spark-line"></div><div class="spark-star">✨</div><div class="spark-line"></div></div>
+
+<div id="finale-anchor" style="padding-top: 60px;"></div>
+<div id="final-zone" class="test-section" style="background: rgba(255, 255, 255, 0.2); border: 2px dashed #ffccaa; min-height: 400px; position: relative; overflow: hidden;">
+    <div id="capsule-stage">
+        <h2>⌛ Цифровая капсула времени</h2>
+        <p>Напиши послание себе в будущее. Оно станет искрой для твоего финала.</p>
+        <textarea id="capsule-msg" style="width: 80%; height: 100px; border-radius: 15px; border: 2px solid #ffccaa; padding: 10px;" placeholder="Я обещаю себе..."></textarea>
+        <br>
+        <button class="ans-btn" onclick="startMegaFinale()" style="background: #ffccaa; margin-top: 20px; font-weight: bold;">ЗАПЕЧАТАТЬ И ЗАВЕРШИТЬ ПУТЬ</button>
+    </div>
+
+    <!-- Холст для салюта и взрыва -->
+    <canvas id="finale-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; pointer-events: none;"></canvas>
+
+    <!-- Золотой билет -->
+    <div id="golden-ticket" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;">
+        <div style="background: linear-gradient(135deg, #ffd700, #ffccaa); padding: 30px; border-radius: 20px; box-shadow: 0 0 50px gold; color: #5a5a5a; text-align: center; border: 5px double #fff; min-width: 300px;">
+            <h1 style="margin: 0; font-size: 1.5rem;">GOLDEN TICKET</h1>
+            <div style="border-top: 2px dashed #fff; margin: 15px 0;"></div>
+            <p style="font-weight: bold; font-size: 1.2rem;">ГЛАВНАЯ ГЕРОИНЯ ЖИЗНИ</p>
+            <p id="ticket-text" style="font-style: italic;"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Лифт для кнопки Финала (если добавишь в список)
+    document.querySelectorAll('.test-card').forEach(card => {
+        if (card.innerText.includes("Завершить") || card.innerText.includes("Финал")) {
+            card.onclick = () => document.getElementById('finale-anchor').scrollIntoView({behavior: 'smooth'});
+        }
+    });
+
+    function startMegaFinale() {
+        const msg = document.getElementById('capsule-msg').value;
+        if (!msg) { alert("Напиши хоть словечко в капсулу!"); return; }
+        
+        document.getElementById('ticket-text').innerText = "Твоё послание сохранено в звёздах...";
+        document.getElementById('capsule-stage').style.transition = "all 2s ease";
+        document.getElementById('capsule-stage').style.opacity = "0";
+        document.getElementById('capsule-stage').style.transform = "scale(0.5) rotate(10deg)";
+
+        setTimeout(() => {
+            document.getElementById('capsule-stage').style.display = 'none';
+            launchFireworks();
+        }, 1500);
+    }
+
+    function launchFireworks() {
+        const canvas = document.getElementById('finale-canvas');
+        canvas.style.display = 'block';
+        const ctx = canvas.getContext('2d');
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        let particles = [];
+        
+        // Создаем "взрыв сверхновой" (много искр из центра)
+        for (let i = 0; i < 150; i++) {
+            particles.push({
+                x: canvas.width / 2,
+                y: canvas.height / 2,
+                vX: (Math.random() - 0.5) * 15,
+                vY: (Math.random() - 0.5) * 15,
+                color: `hsl(${Math.random() * 360}, 100%, 70%)`,
+                size: Math.random() * 4 + 2,
+                life: 100
+            });
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, index) => {
+                p.x += p.vX;
+                p.y += p.vY;
+                p.life--;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                if (p.life <= 0) particles.splice(index, 1);
+            });
+
+            if (particles.length > 0) {
+                requestAnimationFrame(animate);
+            } else {
+                showTicket();
+            }
+        }
+        animate();
+    }
+
+    function showTicket() {
+        const ticket = document.getElementById('golden-ticket');
+        ticket.style.display = 'block';
+        ticket.style.animation = "popIn 1s cubic-bezier(0.17, 0.89, 0.32, 1.49)";
+        
+        // Салют на фоне билета
+        setInterval(() => {
+            // Здесь можно добавить постоянный мелкий салют
+        }, 500);
+
+        // Через 5 секунд - великое исчезновение
+        setTimeout(() => {
+            document.body.style.transition = "all 5s ease";
+            document.body.style.filter = "blur(20px) grayscale(1)";
+            document.body.style.opacity = "0";
+            setTimeout(() => {
+                document.body.innerHTML = "<div style='height:100vh; display:flex; align-items:center; justify-content:center; background:#000; color:#fff; font-family:sans-serif;'>✨ Твоя история продолжается в реальности...</div>";
+                document.body.style.filter = "none";
+                document.body.style.opacity = "1";
+            }, 5000);
+        }, 6000);
+    }
+</script>
+
+<style>
+    @keyframes popIn {
+        from { transform: translate(-50%, -50%) scale(0) rotate(-20deg); opacity: 0; }
+        to { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
